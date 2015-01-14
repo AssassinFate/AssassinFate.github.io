@@ -3,17 +3,35 @@
 <head>
 	<title>51公积金</title>
 	<link rel="stylesheet" href="css\index.css">
+	<script type="text/javascript" src="js\jquery-2.1.3.js"></script>
+	</head>
 	<meta charset="utf-8">
 </head>
-<body class="body">
+<body  class="body">
 	<div class="header">
 		<div class="title"><b>51公积金</b></div>
 		<div class="download"><a href="http://www.baidu.com">立即下载</a></div>
 	</div>
 	<div class="show">**的公积金余额是**元</div>
 
-	<div class="main1"><a href="main2.html">鉴定一下</a></div>
+	<div class="main1">
+		<a href="main2.html">
+			<img id="img" src="photo\search.png" onmouseover="this.src='photo\\search2.png'" onmouseout="this.src='photo\\search.png'">
+		</a>
+	</div>
 
 	<div class="footer"><a href="http://www.baidu.com">查查我的公积金</a></div>
+
+	<!--<script>
+	function imgchange(){
+		element=document.getElementById("img");
+	if (element.src.match="photo\\search.png") {
+		element.src="photo\\search2.png";
+	} 
+	else{
+		element.src="photo\\search.png";
+	}
+	}
+	</script>-->
 </body>
 </html>
