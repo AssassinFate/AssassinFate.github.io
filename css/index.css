@@ -109,6 +109,12 @@ img{
 	font-family: "Microsoft YaHei";
 	color:#8cbb97;
 	background-color: #FFFFFF; 
+	text-align: center;
+	line-height: 400%;
+	height:45%;
+	padding:0px;
+	margin: 0px;
+	border-width:0px;
 }
 .footer{
 	width:100%;
