@@ -72,7 +72,8 @@ img{
 	background-color: #5A976B; 
 	border-style: none;
 	border-width: 0px;
-	line-height: 100%
+	line-height: 400%;
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
 }
 .text{
 	height:100%;
@@ -95,7 +96,7 @@ img{
 	color:#8cbb97;
 	line-height: 400%;
 	font-family: "Microsoft YaHei";
-	font-size: 35px;
+	font-size: 40px;
 
 }
 #opoint{
