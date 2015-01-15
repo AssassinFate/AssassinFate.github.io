@@ -15,23 +15,40 @@
 	<div class="show">**的公积金余额是**元</div>
 
 	<div class="main1">
-		<a href="main2.html">
-			<img id="img" src="photo\search.png" onmouseover="this.src='photo\\search2.png'" onmouseout="this.src='photo\\search.png'">
-		</a>
-	</div>
+	
+		<img id="img" src="photo\search.png" onmouseover="this.src='photo\\search2.png'" onmouseout="this.src='photo\\search.png'" >
+	
+		<div class="main2">
+			<div class="calculate">
+				<div class="describe">
+					<div class="text"><br>*打败全国*的对手!</br><br>被鉴定为*!</br></div>
+					<div class="img">**</div>	
+				</div>
+				<div id="ipoint">"抱大腿"</div>
+			</div>
+				
+			<div class="sum">被抱了<input id="opoint" type="button"  value="0" />次大腿</div>
+		</div>
+
+	<script>
+	$("img").click(function(){
+		$(this).hide();
+		$('.main2').show();
+	});
+
+
+	var i = 1;
+	$('#ipoint').click(function ()
+		{
+			var btn = $('#opoint');
+			if (i==1) 
+			{btn.val(i++);}
+			else 
+			{alert("只能点一次赞哦，亲");}
+		});
+	</script>
+
 
 	<div class="footer"><a href="http://zfgjj.jianbing.com/m/">查查我的公积金</a></div>
-
-	<!--<script>
-	function imgchange(){
-		element=document.getElementById("img");
-	if (element.src.match="photo\\search.png") {
-		element.src="photo\\search2.png";
-	} 
-	else{
-		element.src="photo\\search.png";
-	}
-	}
-	</script>-->
 </body>
 </html>
