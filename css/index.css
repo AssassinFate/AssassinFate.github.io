@@ -66,12 +66,13 @@ img{
 	height:30%;
 	float:right;
 	margin-right: 100px;
-	font-size: 50px;
+	font-size: 60px;
 	font-family: "Microsoft YaHei";
 	color:#CF8A3D;
 	background-color: #5A976B; 
 	border-style: none;
 	border-width: 0px;
+	line-height: 100%
 }
 .text{
 	height:100%;
@@ -80,7 +81,7 @@ img{
 	margin-left: 20%;
 	text-align: center;
 	line-height: 150%;
-	font-size: 40px;
+	font-size: 50px;
 	color: #FED0AE;
 }
 .img{
@@ -94,7 +95,7 @@ img{
 	color:#8cbb97;
 	line-height: 400%;
 	font-family: "Microsoft YaHei";
-	font-size: 25px;
+	font-size: 35px;
 
 }
 #opoint{
@@ -106,7 +107,7 @@ img{
 	padding:0px;
 	margin: 0px;
 	border-width:0px;
-	font-size: 30px;
+	font-size: 45px;
 }
 .footer{
 	width:100%;
