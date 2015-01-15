@@ -1,8 +1,10 @@
 .body{
 	/*width:640px;
 	height:1136px;*/
-	margin-top: 10px;
+	margin-top: 100px;
 	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
 }
 .header{
 	width: 100%;
@@ -15,7 +17,7 @@
 	float:left;
 	text-align: center;
 	margin-left: 20%;
-	font-size: 30px;
+	font-size: 100px;
 	font-family: "Microsoft YaHei";
 }
 .download{
@@ -35,7 +37,7 @@ a{
 	font-family: "Microsoft YaHei";
 	color:#c0c0c0;
 	line-height: 500%;
-	font-size: 20px;
+	font-size: 70px;
 }
 .main1{
 	width:100%;
@@ -65,18 +67,11 @@ img{
 .describe{
 	height:70%;
 }
-.point{
-	height:30%;
-	float:right;
-	margin-right: 100px;
-	font-size: 28px;
-	font-family: "Microsoft YaHei";
-}
 #opoint{
 	height:30%;
 	float:right;
-	margin-right: 100px;
-	font-size: 28px;
+	margin-right: 200px;
+	font-size: 70px;
 	font-family: "Microsoft YaHei";
 	color:#CF8A3D;
 	background-color: #5A976B; 
@@ -90,7 +85,7 @@ img{
 	margin-left: 20%;
 	text-align: center;
 	line-height: 150%;
-	font-size: 25px;
+	font-size: 80px;
 	color: #FED0AE;
 }
 .img{
@@ -116,15 +111,15 @@ img{
 	padding:0px;
 	margin: 0px;
 	border-width:0px;
-	font-size: 25px;
+	font-size: 90px;
 }
 .footer{
 	width:100%;
 	height:10%;
 	background-color:#CF8A3D ;
 	text-align: center;
-	font-size: 30px;
-	line-height: 200%;
+	font-size: 100px;
+	line-height: 250%;
 	font-family: "Microsoft YaHei";
 }
 .footer a{
