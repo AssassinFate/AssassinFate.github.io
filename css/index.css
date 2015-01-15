@@ -1,7 +1,8 @@
 .body{
 	/*width:640px;
 	height:1136px;*/
-	margin: 0px;
+	margin-top: 10px;
+	margin-left: 0px;
 }
 .header{
 	width: 100%;
@@ -115,6 +116,7 @@ img{
 	padding:0px;
 	margin: 0px;
 	border-width:0px;
+	font-size: 25px;
 }
 .footer{
 	width:100%;
