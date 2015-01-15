@@ -65,7 +65,7 @@ img{
 .describe{
 	height:70%;
 }
-#opoint{
+#ipoint{
 	height:30%;
 	float:right;
 	margin-right: 100px;
@@ -100,7 +100,7 @@ img{
 	font-size: 25px;
 
 }
-#ipoint{
+#opoint{
 	border-style: none;
 	font-family: "Microsoft YaHei";
 	color:#8cbb97;
