@@ -9,48 +9,58 @@
 </head>
 <body  class="body">
 	<div class="header">
-		<img id="img1" src="photo\leng.png"></img>
+		<img id="img1" src="photo\BG.png"></img>
 		<!--<div class="download"><a href="https://www.google.com/">立即下载</a></div>-->
 	</div>
 	<div class="show">张三的公积金余额是：<h id="number">1125004.63</h>元</div>
 
 		<div class="main1" >
-			<img id="img2" src="photo\search.png" onmouseover="this.src='photo\\search2.png'" onmouseout="this.src='photo\\search.png'" >
+			<img id="img2" src="photo\anniu1.png">
 		</div>
 	
 		<div class="main2">
 			<div class="calculate">
 				<div class="describe">
-					<div class="text"><br>打败全国 78% 的对手!</br><br>被鉴定为“富可敌国!”</br></div>
+					<div class="text"><br>打败全国 78% 的对手! </br><br>被鉴定为“富可敌国!”</br></div>
 					<div class="img">
-						<img id="img3" src="photo\leng.png"></img>
+						<img id="img3" src="photo\rank\7.png"></img>
 						<br><h id="imgdescribe">富可敌国</h></br>
 					</div>	
 				</div>
-				<img id="ipoint" src="photo\leng.png"></img>
+				<img id="ipoint" src="photo\anniu3.png"></img>
 			</div>
 				
-			<div class="sum">被抱了<input id="opoint" type="button"  value="16809" />次大腿</div>
+			<div class="sum">被抱了<span id="opoint">168</span>次大腿</div>
 		</div>
 
 	<script>
+	var isClicked = false;
+	var alreadyHuggedNum = 168;
+
 	$("img").click(function(){
 		$('.main1').hide();
 		$('.main2').show();
 	});
 
 
-	var i = 16810;
 	$('#ipoint').click(function ()
 		{
-			var btn = $('#opoint');
-			if (i==16810) 
-			{btn.val(i++);}
-			else 
-			{alert("只能点一次赞哦，亲");}
-		});
+			if(!!isClicked){
+				alert("只能点一次赞哦，亲");
+			}else{
+				//isClicked = false;
+				isClicked = true;
+				$('#opoint').html(10 * alreadyHuggedNum);
+			}
+		}
+		);
 	</script>
 
-	<div class="footer"><a href="http://zfgjj.jianbing.com/m/"><img id="img5" src="photo\leng.png"></img></a></div>
+	<div class="footer" >
+		<div id="img5" style="" >
+			<a href="http://zfgjj.jianbing.com/m/">查查我的公积金</a>
+		</div>
+		
+	</div>
 </body>
 </html>

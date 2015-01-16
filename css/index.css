@@ -101,10 +101,10 @@ a{
 	font-size: 60px;
 	font-family: "Microsoft YaHei";
 	color:#CF8A3D;
-	background-color: #5A976B; 
+	background-color: #FFFFFF; 
 	border-style: none;
 	border-width: 0px;
-	border:#959595 solid 1px;
+	border:#F0F0F0 solid 1px;
 	border-radius:25px;
 }
 
@@ -135,11 +135,23 @@ a{
 	height:15%;
 	text-align: center;
 	font-size: 60px;
-	line-height: 300%;
+	line-height: 400%;
 	font-family: "Microsoft YaHei";
 }
 #img5{
-	height:80%;
-	width:90%;
-	background-color:#F0F0F0; 
+	height: 80%;
+	width: 90%;
+	margin-left: 5%;
+	/*background-image: url(photo/anniu2.png);
+	background-repeat:no-repeat;*/
+}
+.footer a{
+	color:#FFFFFF;
+	text-align: center;
+	position: relative;
+	font-size: 100px;
+	line-height: 300%;
+	background-color: #56CF99;
+	padding:5% 25% 5% 25%; 
+	border-radius:40px;
 }
