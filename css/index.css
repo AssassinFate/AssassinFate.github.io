@@ -1,7 +1,6 @@
 .body{
-	/*width:640px;
-	height:1136px;*/
 	margin:0px; 
+	background-color: #F0F0F0;
 }
 .header{
 	width: 100%;
@@ -69,7 +68,7 @@ a{
 	margin-left: 20%;
 	text-align: center;
 	line-height: 150%;
-	font-size: 50px;
+	font-size: 35px;
 	color: #959595;
 }
 .img{
@@ -92,6 +91,7 @@ a{
 	overflow:visible;
 	padding:10px;
 	border-radius:15px;
+	font-size: 25px;
 }
 #ipoint{
 	height:25%;
@@ -120,14 +120,14 @@ a{
 	border-style: none;
 	font-family: "Microsoft YaHei";
 	color:#FF9700;
-	background-color: #FFFFFF; 
+	background-color: #F0F0F0; 
 	height:45%;
 	padding:0px;
 	margin: 0px;
 	border-width:0px;
 	font-size: 70px;
 	text-align: center;
-	width:15%;
+	vertical-align:middle;
 }
 .footer{
 	width:100%;
