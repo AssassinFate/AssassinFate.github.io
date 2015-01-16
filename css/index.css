@@ -150,8 +150,8 @@ a{
 	text-align: center;
 	position: relative;
 	font-size: 100px;
-	line-height: 300%;
+	line-height: 100%;
 	background-color: #56CF99;
-	padding:5% 25% 5% 25%; 
+	padding:5% 15% 5% 15%; 
 	border-radius:40px;
 }
