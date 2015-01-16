@@ -9,25 +9,28 @@
 </head>
 <body  class="body">
 	<div class="header">
-		<div class="title"><b>51公积金</b></div>
-		<div class="download"><a href="https://www.google.com/">立即下载</a></div>
+		<img id="img1" src="photo\leng.png"></img>
+		<!--<div class="download"><a href="https://www.google.com/">立即下载</a></div>-->
 	</div>
-	<div class="show">**的公积金余额是**元</div>
+	<div class="show">张三的公积金余额是：<h id="number">1125004.63</h>元</div>
 
 		<div class="main1" >
-			<img id="img" src="photo\search.png" onmouseover="this.src='photo\\search2.png'" onmouseout="this.src='photo\\search.png'" >
+			<img id="img2" src="photo\search.png" onmouseover="this.src='photo\\search2.png'" onmouseout="this.src='photo\\search.png'" >
 		</div>
 	
 		<div class="main2">
 			<div class="calculate">
 				<div class="describe">
-					<div class="text"><br>*打败全国*的对手!</br><br>被鉴定为*!</br></div>
-					<div class="img">**</div>	
+					<div class="text"><br>打败全国78%的对手!</br><br>被鉴定为“富可敌国!”</br></div>
+					<div class="img">
+						<img id="img3" src="photo\leng.png"></img>
+						<br><h id="imgdescribe">富可敌国</h></br>
+					</div>	
 				</div>
-				<div id="ipoint"><b>抱大腿</b></div>
+				<img id="ipoint" src="photo\leng.png"></img>
 			</div>
 				
-			<div class="sum">被抱了<input id="opoint" type="button"  value="0" />次大腿</div>
+			<div class="sum">被抱了<input id="opoint" style= "overflow:visible;"  value="16809" />次大腿</div>
 		</div>
 
 	<script>
@@ -37,18 +40,17 @@
 	});
 
 
-	var i = 1;
+	var i = 16810;
 	$('#ipoint').click(function ()
 		{
 			var btn = $('#opoint');
-			if (i==1) 
+			if (i==16810) 
 			{btn.val(i++);}
 			else 
 			{alert("只能点一次赞哦，亲");}
 		});
 	</script>
 
-
-	<div class="footer"><a href="http://zfgjj.jianbing.com/m/">查查我的公积金</a></div>
+	<div class="footer"><a href="http://zfgjj.jianbing.com/m/"><img id="img5" src="photo\leng.png"></img></a></div>
 </body>
 </html>
