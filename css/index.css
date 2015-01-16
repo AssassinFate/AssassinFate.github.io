@@ -60,7 +60,6 @@ a{
 .describe{
 	height:70%;
 }
-
 .text{
 	height:100%;
 	width:40%;
@@ -112,7 +111,7 @@ a{
 	height:45%;
 	text-align: center;
 	color:#959595;
-	line-height: 200%;
+	line-height: 300%;
 	font-family: "Microsoft YaHei";
 	font-size: 35px;
 
@@ -126,9 +125,8 @@ a{
 	padding:0px;
 	margin: 0px;
 	border-width:0px;
-	font-size: 70px;
+	font-size: 65px;
 	text-align: center;
-	vertical-align:middle;
 }
 .footer{
 	width:100%;
@@ -149,9 +147,9 @@ a{
 	color:#FFFFFF;
 	text-align: center;
 	position: relative;
-	font-size: 50px;
-	line-height: 200%;
+	font-size: 60px;
+	line-height: 300%;
 	background-color: #56CF99;
-	padding:5% 15% 5% 15%; 
+	padding:5% 20% 5% 20%; 
 	border-radius:40px;
 }
