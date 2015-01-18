@@ -140,8 +140,9 @@ a{
 	height: 80%;
 	width: 90%;
 	margin-left: 5%;
-	/*background-image: url(photo/anniu2.png);
-	background-repeat:no-repeat;*/
+	background-image: url(photo/anniu2.png);
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
 }
 .footer a{
 	color:#FFFFFF;
@@ -149,7 +150,5 @@ a{
 	position: relative;
 	font-size: 60px;
 	line-height: 300%;
-	background-color: #56CF99;
 	padding:5% 20% 5% 20%; 
-	border-radius:40px;
 }
