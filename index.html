@@ -32,7 +32,7 @@
 				<img id="ipoint" src="photo\anniu3.png"></img>
 			</div>
 				
-			<div class="sum">被抱了 <span id="opoint">168</span> 次大腿</div>
+			<div class="sum"><span id="sum1">被抱了</span> <span id="opoint">168</span><span id="sum2"> 次大腿</span></div>
 		</div>
 
 	<script>
@@ -42,10 +42,14 @@
 	{
 		document.getElementById("ipoint").src="anniu4.png";
 		document.getElementById("son").innerHTML = "被全国 "+beatson+" %的对手打败!";
+		document.getElementById("sum1").innerHTML = "被打赏 ";
+		document.getElementById("sum2").innerHTML = " 次";
 	}
 	else{
 		document.getElementById("ipoint").src="anniu3.png";
 		document.getElementById("son").innerHTML = "打败全国 "+beatson+" %的对手!";
+		document.getElementById("sum1").innerHTML = "被抱了 ";
+		document.getElementById("sum2").innerHTML = " 次大腿";
 	}
 
 	var isClicked = false;
