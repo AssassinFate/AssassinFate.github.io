@@ -94,8 +94,9 @@ a{
 	font-size: 35px;
 }
 #ipoint{
-	height:25%;
+	height:80%;
 	float:right;
+	margin-top: 15px;
 	margin-right: 50px;
 	font-size: 60px;
 	font-family: "Microsoft YaHei";
@@ -140,8 +141,6 @@ a{
 	height: 80%;
 	width: 90%;
 	margin-left: 5%;
-	background-image: url(photo/anniu2.png);
-	background-size: 100% 100%;
 	background-repeat:no-repeat;
 }
 .footer a{
