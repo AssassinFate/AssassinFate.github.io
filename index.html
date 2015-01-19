@@ -22,7 +22,7 @@
 			<div class="calculate">
 				<div class="describe">
 					<div class="text">
-						<br>打败全国 78% 的对手! </br><br>被鉴定为“富可敌国!”</br>
+						<br><span id="son">打败全国1%的对手!</span> </br><br>被鉴定为“富可敌国!”</br>
 					</div>
 					<div class="img">
 						<img id="img3" src="photo\rank\7.png"></img>
@@ -36,6 +36,18 @@
 		</div>
 
 	<script>
+	var beatson = Math.floor(Math.random()*100);
+	
+	if(beatson<=50)
+	{
+		document.getElementById("ipoint").src="E:/software/site/AssassinFate.github.io/photo/anniu4.png";
+		document.getElementById("son").innerHTML = "被全国 "+beatson+" %的对手打败!";
+	}
+	else{
+		document.getElementById("ipoint").src="E:/software/site/AssassinFate.github.io/photo/anniu3.png";
+		document.getElementById("son").innerHTML = "打败全国 "+beatson+" %的对手!";
+	}
+
 	var isClicked = false;
 	var alreadyHuggedNum = 168;
 
