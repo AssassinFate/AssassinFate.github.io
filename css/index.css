@@ -58,7 +58,7 @@ a{
 	padding-bottom: 20px;
 }
 .describe{
-	height:70%;
+	height:60%;
 }
 .text{
 	height:100%;
@@ -94,9 +94,8 @@ a{
 	font-size: 35px;
 }
 #ipoint{
-	height:80%;
+	height:30%;
 	float:right;
-	margin-top: 15px;
 	margin-right: 50px;
 	font-size: 60px;
 	font-family: "Microsoft YaHei";
