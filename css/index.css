@@ -57,7 +57,8 @@ a{
 	padding: 0px;/*修改*/
 }
 .describe{
-	height:70%;
+	height:60%;
+	padding-top: 2.3%;
 }
 .text{
 	height:100%;
@@ -65,7 +66,7 @@ a{
 	float:left;
 	margin-left: 10%;
 	text-align: center;
-	line-height: 150%;
+	line-height: 100%;
 	font-size: 35px;
 	color: #959595;
 }
@@ -80,6 +81,10 @@ a{
 #img3{
 	height:50%;/*修改*/
 	background-color: #FFFFFF;
+}
+img{
+	height:100%;
+	width:auto;
 }
 #imgdescribe{
 	background-color: #FF9700;
