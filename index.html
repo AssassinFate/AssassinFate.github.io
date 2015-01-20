@@ -10,7 +10,6 @@
 <body  class="body">
 	<div class="header">
 		<img id="img1" src="photo\BG.png"></img>
-		<!--<div class="download"><a href="https://www.google.com/">立即下载</a></div>-->
 	</div>
 	<div class="show">张三的公积金余额是：<h id="number">1125004.63</h>元</div>
 
@@ -22,11 +21,11 @@
 			<div class="calculate">
 				<div class="describe">
 					<div class="text">
-						<br><span id="son">打败全国1%的对手!</span> </br><br>被鉴定为“富可敌国!”</br>
+						<span id="son">打败全国1%的对手!</span><br>被鉴定为“富可敌国!”
 					</div>
 					<div class="img">
-						<img id="img3" src="photo\rank\7.png"></img>
-						<br><h id="imgdescribe">富可敌国</h></br>
+						<div id="img3"><img src="photo\rank\7.png"></img></div>
+						<h id="imgdescribe">富可敌国</h>
 					</div>	
 				</div>
 				<img id="ipoint" src="photo\anniu3.png"></img>
@@ -35,12 +34,13 @@
 			<div class="sum"><span id="sum1">被抱了</span> <span id="opoint">168</span><span id="sum2"> 次大腿</span></div>
 		</div>
 
-	<script>
+	<script>/*修改*/
 	var beatson = Math.floor(Math.random()*100);
 	
 	if(beatson<=50)
 	{
 		document.getElementById("ipoint").src="anniu4.png";
+		/*问题：只能用绝对路径打开 用不了相对路径 若要用相对路径 必须把图片和本文件放在同一根目录下 不知道怎么解决*/
 		document.getElementById("son").innerHTML = "被全国 "+beatson+" %的对手打败!";
 		document.getElementById("sum1").innerHTML = "被打赏 ";
 		document.getElementById("sum2").innerHTML = " 次";
