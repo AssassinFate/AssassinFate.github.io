@@ -1,26 +1,17 @@
 .body{
-	margin:0px; 
+	margin: 0px;
 	background-color: #F0F0F0;
 }
 .header{
-	width: 100%;
-	height:29%;
-	line-height: 500%;
+	width:100%;
+	height:auto;
 }
 #img1{
 	width:100%;
-	height:100%;
-}
-.download{
-	float: left;
-	font-family: "Microsoft YaHei";
-	font-size: 30px;
+	height:auto;
 }
 a{
 	text-decoration: none;
-}
-.download a{
- 	color: #CF8A3D; 
 }
 .show{
 	width:100%;
@@ -28,18 +19,21 @@ a{
 	text-align: center;
 	font-family: "Microsoft YaHei";
 	color:#959595;
-	line-height: 500%;
-	font-size: 35px;
+	font-size: 200%;
+	float:left;
 }
 #number{
 	color:#FF9700;
-	font-size: 70px;
+	font-size: 200%;
 }
 .main1{
 	width:100%;
-	height:43%;
-	text-align: center;
+	height:auto;
 	font-family: "Microsoft YaHei";
+	float:left;
+	text-align:center;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 #img2{
 	height:auto;
@@ -48,7 +42,8 @@ a{
 .main2{
 	display: none;
 	width:100%;
-	height:43%;
+	height:auto;
+	float:left;
 }
 .calculate{
 	background-color: #FFFFFF;
@@ -61,27 +56,25 @@ a{
 }
 .text{
 	height:100%;
-	width:40%;
+	width:60%;
 	float:left;
-	margin-left: 20%;
+	margin-left: 5%;
 	text-align: center;
 	line-height: 150%;
 	font-size: 35px;
 	color: #959595;
 }
 .img{
-	height:40%;
+	height:100%;
 	width:30%;
 	float:left;
-	margin-right: 10%;
-	line-height: 150%;
 	font-size: 50px;
 	color: #FFFFFF;
 	text-align: center;
-	padding-top: 3%;
 }
 #img3{
-	height:80%;/*修改*/
+	width:100%;
+	height:auto;/*修改*/
 	background-color: #FFFFFF;
 }
 #imgdescribe{
@@ -128,11 +121,11 @@ a{
 	text-align: center;
 }
 .footer{
+	float:left;
 	width:100%;
 	height:15%;
 	text-align: center;
 	font-size: 60px;
-	line-height: 400%;
 	font-family: "Microsoft YaHei";
 }
 #img5{
@@ -144,8 +137,5 @@ a{
 .footer a{
 	color:#FFFFFF;
 	text-align: center;
-	position: relative;
-	font-size: 60px;
-	line-height: 300%;
-	padding:5% 20% 5% 20%; 
+	font-size: 60px; 
 }
