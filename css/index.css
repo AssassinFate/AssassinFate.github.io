@@ -1,17 +1,26 @@
 .body{
-	margin: 0px;
+	margin:0px; 
 	background-color: #F0F0F0;
 }
 .header{
-	width:100%;
-	height:auto;
+	width: 100%;
+	height:29%;
+	line-height: 500%;
 }
 #img1{
 	width:100%;
-	height:auto;
+	height:100%;
+}
+.download{
+	float: left;
+	font-family: "Microsoft YaHei";
+	font-size: 30px;
 }
 a{
 	text-decoration: none;
+}
+.download a{
+ 	color: #CF8A3D; 
 }
 .show{
 	width:100%;
@@ -19,29 +28,18 @@ a{
 	text-align: center;
 	font-family: "Microsoft YaHei";
 	color:#959595;
-<<<<<<< HEAD
+	line-height: 500%;
 	font-size: 35px;
-=======
-	font-size: 200%;
-	float:left;
->>>>>>> 0fc1eef852ff4b6eca441c0a009f8ece61edbccc
 }
 #number{
 	color:#FF9700;
-	font-size: 200%;
+	font-size: 70px;
 }
 .main1{
 	width:100%;
-	height:auto;
+	height:43%;
+	text-align: center;
 	font-family: "Microsoft YaHei";
-<<<<<<< HEAD
-	overflow: hidden;
-=======
-	float:left;
-	text-align:center;
-	padding-top: 5%;
-	padding-bottom: 5%;
->>>>>>> 0fc1eef852ff4b6eca441c0a009f8ece61edbccc
 }
 #img2{
 	height:auto;
@@ -50,8 +48,7 @@ a{
 .main2{
 	display: none;
 	width:100%;
-	height:auto;
-	float:left;
+	height:43%;
 }
 .calculate{
 	background-color: #FFFFFF;
@@ -64,40 +61,34 @@ a{
 }
 .text{
 	height:100%;
-	width:60%;
+	width:40%;
 	float:left;
-<<<<<<< HEAD
-	margin-left: 10%;
-=======
-	margin-left: 5%;
->>>>>>> 0fc1eef852ff4b6eca441c0a009f8ece61edbccc
+	margin-left: 20%;
 	text-align: center;
 	line-height: 150%;
 	font-size: 35px;
 	color: #959595;
 }
 .img{
-	height:100%;
+	height:40%;
 	width:30%;
 	float:left;
+	margin-right: 10%;
+	line-height: 150%;
 	font-size: 50px;
 	color: #FFFFFF;
 	text-align: center;
+	padding-top: 3%;
 }
 #img3{
-	width:100%;
-<<<<<<< HEAD
-	height:50%;	/*修改*/
-=======
-	height:auto;/*修改*/
->>>>>>> 0fc1eef852ff4b6eca441c0a009f8ece61edbccc
+	height:80%;/*修改*/
 	background-color: #FFFFFF;
 }
 #imgdescribe{
 	background-color: #FF9700;
 	text-align: center;
 	overflow:visible;
-	padding:5px;
+	padding:10px;
 	border-radius:15px;
 	font-size: 35px;
 }
@@ -137,11 +128,11 @@ a{
 	text-align: center;
 }
 .footer{
-	float:left;
 	width:100%;
 	height:15%;
 	text-align: center;
 	font-size: 60px;
+	line-height: 400%;
 	font-family: "Microsoft YaHei";
 }
 #img5{
@@ -153,9 +144,8 @@ a{
 .footer a{
 	color:#FFFFFF;
 	text-align: center;
-<<<<<<< HEAD
+	position: relative;
 	font-size: 60px;
-=======
-	font-size: 60px; 
->>>>>>> 0fc1eef852ff4b6eca441c0a009f8ece61edbccc
+	line-height: 300%;
+	padding:5% 20% 5% 20%; 
 }
