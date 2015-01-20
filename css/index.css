@@ -28,7 +28,6 @@ a{
 	text-align: center;
 	font-family: "Microsoft YaHei";
 	color:#959595;
-	line-height: 500%;
 	font-size: 35px;
 }
 #number{
@@ -40,6 +39,7 @@ a{
 	height:43%;
 	text-align: center;
 	font-family: "Microsoft YaHei";
+	overflow: hidden;
 }
 #img2{
 	height:auto;
@@ -61,34 +61,31 @@ a{
 }
 .text{
 	height:100%;
-	width:40%;
+	width:60%;
 	float:left;
-	margin-left: 20%;
+	margin-left: 10%;
 	text-align: center;
 	line-height: 150%;
 	font-size: 35px;
 	color: #959595;
 }
 .img{
-	height:40%;
+	height:100%;
 	width:30%;
 	float:left;
-	margin-right: 10%;
-	line-height: 150%;
 	font-size: 50px;
 	color: #FFFFFF;
 	text-align: center;
-	padding-top: 3%;
 }
 #img3{
-	height:80%;/*修改*/
+	height:50%;/*修改*/
 	background-color: #FFFFFF;
 }
 #imgdescribe{
 	background-color: #FF9700;
 	text-align: center;
 	overflow:visible;
-	padding:10px;
+	padding:5px;
 	border-radius:15px;
 	font-size: 35px;
 }
@@ -132,7 +129,6 @@ a{
 	height:15%;
 	text-align: center;
 	font-size: 60px;
-	line-height: 400%;
 	font-family: "Microsoft YaHei";
 }
 #img5{
@@ -144,8 +140,5 @@ a{
 .footer a{
 	color:#FFFFFF;
 	text-align: center;
-	position: relative;
 	font-size: 60px;
-	line-height: 300%;
-	padding:5% 20% 5% 20%; 
 }
