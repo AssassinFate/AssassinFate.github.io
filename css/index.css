@@ -11,7 +11,6 @@
 	background-color: #F0F0F0;
 }
 } 
-
 .header{
 	width: 100%;
 	height:29%;
@@ -30,12 +29,12 @@ a{
 	text-align: center;
 	font-family: "Microsoft YaHei";
 	color:#959595;
-	font-size: 200%;
+	font-size: 150%;
 	line-height: 500%;
 }
 #number{
 	color:#FF9700;
-	font-size: 120%;
+	font-size: 200%;
 }
 .main1{
 	width:100%;
@@ -47,17 +46,35 @@ a{
 #img2{
 	height:auto;
 	width:25%;
+	margin-top: 15%;
 }
 #identify{
 	font-family: "Microsoft YaHei";
-	color:#959595;
+	color:#FF9700;
 	font-size: 200%;
 	line-height: 200%;
 }
-.main2{
+#page1{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+#page2{
 	display: none;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top:0px;
+	height:89%;
+	margin: 0 auto;
+	z-index: 9;
+	background-color: rgb(144,144,144);
+	background-color: rgba(144,144,144,0.5);
+}
+#main2{
 	width:100%;
 	height:47%;
+	margin-top:70%;
 }
 .calculate{
 	background-color: #FFFFFF;
@@ -66,13 +83,14 @@ a{
 	padding: 0px;
 }
 .describe{
-	height:60%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	height:53%;
 }
 .text{
 	height:100%;
 	width:60%;
 	float:left;
-	margin-left: 10%;
 	text-align: center;
 	line-height: 100%;
 	font-size: 200%;
@@ -81,7 +99,7 @@ a{
 .img{
 	height:100%;
 	width:30%;
-	float:right;
+	float:left;
 	color: #FFFFFF;
 	text-align: center;
 }
@@ -102,24 +120,24 @@ img{
 	font-size: 200%;
 }
 #ipoint{
-	height:25%;/*修改*/
-	float:right;
+	height: 60%;
+	float:left;
+	margin-left: 20%;
 	margin-right: 5%;
 	color:#CF8A3D;
 	background-color: #FFFFFF; 
 	border-style: none;
 	border-width: 0px;
-	border:#F0F0F0 solid 1px;
-	border-radius:10px;
+	border:#F0F0F0;
+	border-radius:5px;
 }
 
 .sum{
-	height:45%;
-	text-align: center;
+	height:15%;
 	color:#959595;
 	font-family: "Microsoft YaHei";
 	font-size: 200%;
-	line-height: 300%;
+	background-color: #FFFFFF;
 }
 #opoint{
 	border-style: none;
@@ -133,11 +151,12 @@ img{
 	font-size: 120%;
 	text-align: center;
 }
-.footer{
+#footer{
 	width:100%;
 	height:10%;
 	text-align: center;
 	font-family: "Microsoft YaHei";
+	background-color: #F0F0F0;
 }
 #img5{
 	height: 80%;

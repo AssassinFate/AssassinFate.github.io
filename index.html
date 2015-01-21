@@ -25,41 +25,68 @@
         //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面 
         window.onload=function(){ 
         var sc=document.getElementById("body");
-        if (system.win || system.mac || system.xll||system.ipad) { 
- 			sc.setAttribute("style","height:2000px;width:100%;margin:0px; background-color: #F0F0F0;font-size: 100%;"); 
+        var main=document.getElementById("main");
+        //var main2=document.getElementById("main2");
+        if (system.win || system.mac || system.xll) { 
+ 			sc.setAttribute("style","height:1000px;width:600px;margin:0px auto; background-color: #FCFCFC;font-size: 70%;"); 
+ 			main.setAttribute("style","width:100%;height:100%;background-color: #F0F0F0;margin:0 auto;"); 
+ 			//main2.setAttribute("style","width:600px;position:absolute;left:0px;top:0px;display: none;height:47%;margin-top: 42%;margin-bottom: 10%;");
         }
-        else  {sc.setAttribute("style","margin:0px; background-color: #F0F0F0;font-size:120%;"); }
+        else  {
+        	sc.setAttribute("style","margin:0px; background-color: #F0F0F0;font-size:120%;"); 
+        	main.setAttribute("style","display:none;");
+        	//main2.setAttribute("style","position:absolute;left:0px;top:0px;display: none;width:100%;height:47%;margin-top: 42%;margin-bottom: 10%;")
+    	}
     	}
 	</script> 
 
 </head>
 <body  id="body">
+	<div id="main">
+
+	<div id="page1">
 	<div class="header">
 		<img id="img1" src="photo\BG.png"></img>
 	</div>
+
 	<div class="show">我的公积金余额是：<h id="number">1125004.63</h>元</div>
 
-		<div class="main1" >
-			<img id="img2" src="photo\anniu1.png">
-			<br><div id="identify">鉴定一下</div></br>
-		</div>
+	<div class="main1" >
+		<img id="img2" src="photo\anniu1.png">
+		<br><div id="identify">鉴定一下</div></br>
+	</div>
 	
-		<div class="main2">
-			<div class="calculate">
-				<div class="describe">
-					<div class="text">
-						<br><span id="son">打败全国1%的对手!</span><br><br>被鉴定为“富可敌国!”
-					</div>
-					<div class="img">
-						<div id="img3"><img  src="photo\rank\7.png"></img></div>
-						<h id="imgdescribe">富可敌国</h>
-					</div>	
+	
+	<div id="page2">
+	<div id="main2">
+		<div class="calculate">
+			<div class="describe">
+				<div class="text">
+					<br><span id="son">打败全国1%的对手!</span><br><br>被鉴定为“富可敌国!”
 				</div>
-				<img id="ipoint" src="photo\anniu3.png"></img>
+				<div class="img">
+					<div id="img3"><img  src="photo\rank\7.png"></img></div>
+					<h id="imgdescribe">富可敌国</h>
+				</div>	
 			</div>
-				
-			<div class="sum"><span id="sum1">被抱了</span> <span id="opoint">168</span><span id="sum2"> 次大腿</span></div>
 		</div>
+				
+		<div class="sum">
+			<img id="ipoint" src="photo\anniu3.png"></img>
+			<span id="sum1">被抱了</span> <span id="opoint">168</span><span id="sum2"> 次大腿</span>
+		</div>
+	</div>
+	</div>
+
+	<div class="footer" id="footer">
+	<div id="img5" style="background-image: url(photo/anniu2.png);background-size: 100% 100%;">
+		<a href="http://zfgjj.jianbing.com/m/">查查我的公积金</a>
+	</div>	
+	</div>
+
+	</div>
+	</div>
+
 
 	<script>/*修改*/
 	var beatson = Math.floor(Math.random()*100);
@@ -83,8 +110,9 @@
 	var alreadyHuggedNum = 168;
 
 	$("img").click(function(){
-		$('.main1').hide();
-		$('.main2').show();
+		//$('.main1').hide();
+		$('#page2').show();
+		document.getElementById("footer").style.backgroundColor="rgba(144,144,144,0.5)";
 	});
 
 
@@ -100,13 +128,5 @@
 		}
 		);
 	</script>
-
-	<div class="footer" >
-		<div id="img5" style="background-image: url(photo/anniu2.png);
-	background-size: 100% 100%;">
-			<a href="http://zfgjj.jianbing.com/m/">查查我的公积金</a>
-		</div>
-		
-	</div>
 </body>
 </html>
