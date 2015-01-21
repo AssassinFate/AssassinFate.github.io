@@ -122,7 +122,7 @@ img{
 #ipoint{
 	height: 80%;
 	float:left;
-	margin-left: 25%;
+	margin-left: 20%;
 	margin-right: 5%;
 	color:#CF8A3D;
 	background-color: #FFFFFF; 
@@ -137,7 +137,10 @@ img{
 	color:#959595;
 	font-family: "Microsoft YaHei";
 	font-size: 200%;
+	line-height: 250%;
 	background-color: #FFFFFF;
+	float:left;
+	width:100%;
 }
 #opoint{
 	border-style: none;
