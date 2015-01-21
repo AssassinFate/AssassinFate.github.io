@@ -25,6 +25,7 @@ a{
 	font-family: "Microsoft YaHei";
 	color:#959595;
 	font-size: 200%;
+	line-height: 500%;
 }
 #number{
 	color:#FF9700;
@@ -45,6 +46,7 @@ a{
 	font-family: "Microsoft YaHei";
 	color:#959595;
 	font-size: 200%;
+	line-height: 200%;
 }
 .main2{
 	display: none;
@@ -111,7 +113,7 @@ img{
 	color:#959595;
 	font-family: "Microsoft YaHei";
 	font-size: 200%;
-
+	line-height: 300%;
 }
 #opoint{
 	border-style: none;
@@ -141,6 +143,7 @@ img{
 	color:#FFFFFF;
 	text-align: center;
 	font-size: 300%;
+	line-height: 250%;
 }
 
 
