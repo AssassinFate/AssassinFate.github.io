@@ -122,7 +122,7 @@ img{
 #ipoint{
 	height: 80%;
 	float:left;
-	margin-left: 30%;
+	margin-left: 25%;
 	margin-right: 5%;
 	color:#CF8A3D;
 	background-color: #FFFFFF; 
@@ -133,7 +133,7 @@ img{
 }
 
 .sum{
-	height:15%;
+	height:16%;
 	color:#959595;
 	font-family: "Microsoft YaHei";
 	font-size: 200%;
