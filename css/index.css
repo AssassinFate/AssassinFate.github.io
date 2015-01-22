@@ -95,9 +95,12 @@ a{
 	background-color: rgb(144,144,144);
 	background-color: rgba(144,144,144,0.6);
 }
+#page2header{
+	height:43%;
+}
 #main2{
 	width:100%;
-	height:46.2%;
+	height:46%;
 	margin-top:61%;
 }
 .describe{
