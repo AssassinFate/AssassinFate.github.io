@@ -79,7 +79,7 @@ a{
 .describe{
 	padding-top: 6%;
 	padding-bottom: 10%;
-	height:40%;
+	height:35%;
 	background-color: #FFFFFF;
 }
 .text{
@@ -118,7 +118,7 @@ img{
 	font-size: 200%;
 }
 #ipoint{
-	height: 80%;
+	height: 60%;
 	float:left;
 	margin-left: 20%;
 	margin-right: 5%;
@@ -126,10 +126,11 @@ img{
 	background-color: #FFFFFF; 
 	border-width: 0px;
 	border-radius:5px;
+	padding-top: 2px;
 }
 
 .sum{
-	height:16%;
+	height:21%;
 	color:#959595;
 	font-family: "Microsoft YaHei";
 	font-size: 200%;
