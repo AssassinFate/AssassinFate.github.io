@@ -160,10 +160,14 @@ img{
 	color:#959595;
 	font-family: "Microsoft YaHei";
 	font-size: 200%;
-	line-height: 180%;
 	background-color: #FFFFFF;
 	float:left;
 	width:100%;
+}
+#sum0{
+	width:auto;
+	height:100%;
+	line-height: 250%;
 }
 #opoint{
 	border-style: none;

@@ -152,7 +152,7 @@ img{
 	background-color: #FFFFFF; 
 	border-width: 0px;
 	border-radius:5px;
-	padding-top: 2px;
+	padding-top: 5px;
 }
 
 .sum{
@@ -160,10 +160,14 @@ img{
 	color:#959595;
 	font-family: "Microsoft YaHei";
 	font-size: 100%;
-	line-height: 180%;
 	background-color: #FFFFFF;
 	float:left;
 	width:100%;
+}
+#sum0{
+	width:auto;
+	height:100%;
+	line-height: 250%;
 }
 #opoint{
 	border-style: none;
