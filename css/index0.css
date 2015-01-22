@@ -1,0 +1,225 @@
+@media all and (orientation : landscape) { /*　　这是匹配横屏的状态，横屏时的css代码　　*/
+#body{
+	margin:0px; 
+	background-color: #F0F0F0;
+	height:1366px;
+}
+} 
+@media all and (orientation : portrait){/*　　这是匹配竖屏的状态，竖屏时的css代码　　*/
+#body{
+	margin:0px; 
+	background-color: #F0F0F0;
+}
+} 
+.header{
+	width: 100%;
+	height:29%;
+	line-height: 500%;
+}
+#img1{
+	width:100%;
+	height:100%;
+}
+a{
+	text-decoration: none;
+}
+.show{
+	width:100%;
+	height:13%;
+	text-align: center;
+	font-family: "Microsoft YaHei";
+	color:#959595;
+	font-size: 100%;
+	line-height: 100%;
+}
+#number{
+	color:#FF9700;
+	font-size: 100%;
+	font-family: "Arial";
+}
+#numberfloat{
+	font-size: 75%;
+}
+.main1{
+	width:100%;
+	height:47%;
+	text-align: center;
+	font-family: "Microsoft YaHei";
+	overflow: hidden;
+}
+#img2{
+	height:auto;
+	width:25%;
+	margin-top: 15%;
+}
+#identify{
+	font-family: "Microsoft YaHei";
+	color:#FF9700;
+	font-size: 100%;
+	line-height: 200%;
+}
+#loading{
+	background:#98bf21;
+	height:10px;
+	width:10px;
+	position:absolute;
+	float:left;
+	margin-left: 35%;
+	display: none;
+	box-shadow:  0px 1px rgba(197, 223, 248,0.8),
+				 0px 2px rgba(197, 223, 248,0.8),
+				 0px 3px rgba(197, 223, 248,0.8),
+				 0px 4px rgba(197, 223, 248,0.8),
+				 0px 5px rgba(197, 223, 248,0.8),
+				 0px 6px rgba(197, 223, 248,0.8);
+}
+#page0{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+#page1{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+#page2{
+	display: none;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top:0px;
+	height:100%;
+	margin: 0 auto;
+	z-index: 9;
+	background-color: rgb(144,144,144);
+	background-color: rgba(144,144,144,0.6);
+}
+#main2{
+	width:100%;
+	height:46.2%;
+	margin-top:61%;
+}
+.describe{
+	padding-top: 6%;
+	padding-bottom: 10%;
+	height:35%;
+	background-color: #FFFFFF;
+}
+.text{
+	height:100%;
+	width:55%;
+	float:left;
+	line-height: 100%;
+	font-size: 100%;
+	color: #959595;
+	padding-left: 10%;
+}
+.img{
+	height:100%;
+	width:30%;
+	float:left;
+	color: #FFFFFF;
+	text-align: center;
+}
+#img3{
+	height:50%;/*修改*/
+	background-color: #FFFFFF;
+}
+img{
+	height:100%;
+	width:auto;
+}
+#imgdescribe{
+	background-color: #FF9700;
+	text-align: center;
+	overflow:visible;
+	padding-top:5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius:5px;
+	font-size: 100%;
+}
+#ipoint{
+	height: 60%;
+	float:left;
+	margin-left: 20%;
+	margin-right: 5%;
+	color:#CF8A3D;
+	background-color: #FFFFFF; 
+	border-width: 0px;
+	border-radius:5px;
+	padding-top: 2px;
+}
+
+.sum{
+	height:21%;
+	color:#959595;
+	font-family: "Microsoft YaHei";
+	font-size: 100%;
+	line-height: 180%;
+	background-color: #FFFFFF;
+	float:left;
+	width:100%;
+}
+#opoint{
+	border-style: none;
+	font-family: "Arial";
+	color:#FF9700;
+	height:45%;
+	padding:0px;
+	margin: 0px;
+	border-width:0px;
+	font-size: 120%;
+	text-align: center;
+}
+#thank{
+	height:100%;
+	position:relative;
+	padding-left: 0px;
+	width:50px;
+	color:#FF2525;
+	font-size: 200%;
+	font-family: "Snap ITC";
+	padding-top: 40%;
+	display:none;
+	text-shadow: 1px 1px rgba(197, 223, 248,0.8),
+				 2px 2px rgba(197, 223, 248,0.8),
+				 3px 3px rgba(197, 223, 248,0.8),
+				 4px 4px rgba(197, 223, 248,0.8),
+				 5px 5px rgba(197, 223, 248,0.8),
+				 6px 6px rgba(197, 223, 248,0.8);
+}
+#zan{
+	position: relative;
+	width:100px;
+	height:100px;
+}
+#footer{
+	width:100%;
+	height:11%;
+	text-align: center;
+	font-family: "Microsoft YaHei";
+	background-color: #F0F0F0;
+}
+#footer2{
+	width:100%;
+	height:11%;
+	text-align: center;
+	font-family: "Microsoft YaHei";
+}
+#img5{
+	height: 80%;
+	width: 90%;
+	margin-left: 5%;
+	background-repeat:no-repeat;
+}
+.footer a{
+	color:#FFFFFF;
+	text-align: center;
+	font-size: 150%;
+	line-height: 200%;
+}
+
+
