@@ -22,20 +22,15 @@
         system.mac = p.indexOf("Mac") == 0; 
         system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
         system.ipad = (navigator.userAgent.match(/iPad/i) != null)?true:false; 
-        //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面 
         window.onload=function(){ 
         var sc=document.getElementById("body");
         var main=document.getElementById("main");
-        //var main2=document.getElementById("main2");
         if (system.win || system.mac || system.xll) { 
  			sc.setAttribute("style","height:1000px;width:600px;margin:0px auto; background-color: #FCFCFC;font-size: 70%;"); 
  			main.setAttribute("style","width:100%;height:100%;background-color: #F0F0F0;margin:0 auto;"); 
- 			//main2.setAttribute("style","width:600px;position:absolute;left:0px;top:0px;display: none;height:47%;margin-top: 42%;margin-bottom: 10%;");
         }
         else  {
         	sc.setAttribute("style","margin:0px; background-color: #F0F0F0;font-size:120%;"); 
-        	//main.setAttribute("style","display:none;");
-        	//main2.setAttribute("style","position:absolute;left:0px;top:0px;display: none;width:100%;height:47%;margin-top: 42%;margin-bottom: 10%;")
     	}
     	}
 	</script> 
@@ -59,17 +54,19 @@
 	
 	<div id="page2">
 	<div id="main2">
-		<div class="calculate">
 			<div class="describe">
 				<div class="text">
-					<br><span id="son">打败全国1%的对手!</span><br><br>被鉴定为“富可敌国!”
+					<br>
+					<span id="text1">打败全国</span>
+					<span id="text2" style="color:#FF9700;">1</span>
+					<span id="text3">%的对手!</span><br><br>被鉴定为
+					<span id="text4" style="color:#FF9700;">“富可敌国”</span>!
 				</div>
 				<div class="img">
-					<div id="img3"><img  src="photo\rank\7.png"></img></div>
+					<div id="img3"><img  id="img4"src="photo\rank\7.png"></img></div>
 					<h id="imgdescribe">富可敌国</h>
 				</div>	
 			</div>
-		</div>
 				
 		<div class="sum">
 			<img id="ipoint" src="photo\anniu3.png"></img>
@@ -88,23 +85,78 @@
 	</div>
 
 
-	<script>/*修改*/
+	<script>
 	var beatson = Math.floor(Math.random()*100);
 	
 	if(beatson<=50)
 	{
-		document.getElementById("ipoint").src="anniu4.png";
-		/*问题：只能用绝对路径打开 用不了相对路径 若要用相对路径 必须把图片和本文件放在同一根目录下 不知道怎么解决*/
-		document.getElementById("son").innerHTML = "被全国 "+beatson+" %的对手打败!";
+		document.getElementById("ipoint").src="photo\\anniu4.png";
+		document.getElementById("text1").innerHTML = "被全国 ";
+		document.getElementById("text2").innerHTML = beatson+"%";
+		document.getElementById("text3").innerHTML = " 的对手打败!";
+		if (beatson<=10){
+			document.getElementById("text4").innerHTML = "“穷困潦倒”";
+			document.getElementById("imgdescribe").innerHTML = "穷困潦倒";
+			document.getElementById("img4").src = "photo\\rank\\1.png";
+		}
+		else if (beatson<=20 && beatson>10){
+			document.getElementById("text4").innerHTML = "“穷困潦倒”";
+			document.getElementById("imgdescribe").innerHTML = "穷困潦倒";
+			document.getElementById("img4").src = "photo\\rank\\1.png";
+		}
+		else if (beatson<=30 && beatson>20){
+			document.getElementById("text4").innerHTML = "“一贫如洗”";
+			document.getElementById("imgdescribe").innerHTML = "一贫如洗";
+			document.getElementById("img4").src = "photo\\rank\\2.png";
+		}
+		else if (beatson<=40 && beatson>30){
+			document.getElementById("text4").innerHTML = "“家徒四壁”";
+			document.getElementById("imgdescribe").innerHTML = "家徒四壁";
+			document.getElementById("img4").src = "photo\\rank\\3.png";
+		}
+		else if (beatson<=50 && beatson>40){
+			document.getElementById("text4").innerHTML = "“衣食无忧”";
+			document.getElementById("imgdescribe").innerHTML = "衣食无忧";
+			document.getElementById("img4").src = "photo\\rank\\4.png";
+		}
 		document.getElementById("sum1").innerHTML = "被打赏 ";
-		document.getElementById("sum2").innerHTML = " 次";
+		document.getElementById("sum2").innerHTML = " 次!";
+
 	}
 	else{
-		document.getElementById("ipoint").src="anniu3.png";
-		document.getElementById("son").innerHTML = "打败全国 "+beatson+" %的对手!";
+		document.getElementById("ipoint").src="photo\\anniu3.png";
+		document.getElementById("text1").innerHTML = "打败全国 ";
+		document.getElementById("text2").innerHTML = beatson+"%";
+		document.getElementById("text3").src = " 的对手!";
+		if(beatson<=60 && beatson>50){
+			document.getElementById("text4").innerHTML = "“财大气粗”";
+			document.getElementById("imgdescribe").innerHTML = "财大气粗";
+			document.getElementById("img4").src = "photo\\rank\\5.png";
+		}
+		else if (beatson<=70 && beatson>60){
+			document.getElementById("text4").innerHTML = "“豪门权贵”";
+			document.getElementById("imgdescribe").innerHTML = "豪门权贵";
+			document.getElementById("img4").src = "photo\\rank\\6.png";
+		}
+		else if (beatson<=80 && beatson>70){
+			document.getElementById("text4").innerHTML = "“家财万贯”";
+			document.getElementById("imgdescribe").innerHTML = "家财万贯";
+			document.getElementById("img4").src = "photo\\rank\\7.png";
+		}
+		else if (beatson<=90 && beatson>80){
+			document.getElementById("text4").innerHTML = "“富甲一方”";
+			document.getElementById("imgdescribe").innerHTML = "富甲一方";
+			document.getElementById("img4").src = "photo\\rank\\8.png";
+		}
+		else if (beatson<=100 && beatson>90){
+			document.getElementById("text4").innerHTML = "“富可敌国”";
+			document.getElementById("imgdescribe").innerHTML = "富可敌国";
+			document.getElementById("img4").src = "photo\\rank\\9.png";
+		}
 		document.getElementById("sum1").innerHTML = "被抱了 ";
-		document.getElementById("sum2").innerHTML = " 次大腿";
+		document.getElementById("sum2").innerHTML = " 次大腿!";
 	}
+
 
 	var isClicked = false;
 	var alreadyHuggedNum = 168;
@@ -119,7 +171,7 @@
 	$('#ipoint').click(function ()
 		{
 			if(!!isClicked){
-				alert("只能点一次赞哦，亲");
+				alert("只能点一次哦，亲");
 			}else{
 				//isClicked = false;
 				isClicked = true;
