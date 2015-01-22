@@ -44,11 +44,12 @@
 		<img id="img1" src="photo\BG.png"></img>
 	</div>
 
-	<div class="show">我的公积金余额是：<h id="number">1125004.63</h>元</div>
+	<div class="show">我的公积金余额是：<h id="number"><span id="numberint"></span>.<span id="numberfloat"></span></h> 元</div>
 
 	<div class="main1" >
 		<img id="img2" src="photo\anniu1.png">
 		<br><div id="identify">鉴定一下</div></br>
+		<div id="loading"></div>
 	</div>
 	
 	
@@ -58,20 +59,27 @@
 				<div class="text">
 					<br>
 					<span id="text1">打败全国</span>
-					<span id="text2" style="color:#FF9700;">1</span>
+					<span id="text2" style="color:#FF9700;	font-family: 'Arial';">1</span>
 					<span id="text3">%的对手!</span><br><br>被鉴定为
 					<span id="text4" style="color:#FF9700;">“富可敌国”</span>!
 				</div>
 				<div class="img">
 					<div id="img3"><img  id="img4"src="photo\rank\7.png"></img></div>
 					<h id="imgdescribe">富可敌国</h>
+					<div id="thank">+1</div>
 				</div>	
 			</div>
 				
 		<div class="sum">
 			<img id="ipoint" src="photo\anniu3.png"></img>
-			<span id="sum1">被抱了</span> <span id="opoint">168</span><span id="sum2"> 次大腿</span>
+			<span id="sum1">被抱了</span> <span id="opoint">168</span><span id="sum2"> 次大腿</span>	
 		</div>
+	</div>
+
+	<div class="footer" id="footer2">
+		<div id="img5" style="background-image: url(photo/anniu2.png);background-size: 100% 100%;">
+		<a href="http://zfgjj.jianbing.com/m/">查查我的公积金</a>
+		</div>	
 	</div>
 	</div>
 
@@ -86,6 +94,14 @@
 
 
 	<script>
+	/*公积金余额*/
+	var gjjnum = Math.random()*10000000;
+	var gjjnumint=Math.floor(gjjnum);
+	var gjjnumfloat=gjjnum-gjjnumint;
+	document.getElementById("numberint").innerHTML=gjjnumint;
+	document.getElementById("numberfloat").innerHTML=(gjjnumfloat.toFixed(2))*100;
+	
+	/*确定等级*/
 	var beatson = Math.floor(Math.random()*100);
 	
 	if(beatson<=50)
@@ -157,17 +173,22 @@
 		document.getElementById("sum2").innerHTML = " 次大腿!";
 	}
 
-
+	/*page1退去 page2显示*/
 	var isClicked = false;
 	var alreadyHuggedNum = 168;
 
-	$("img").click(function(){
+	$("#img2").click(function(){
 		//$('.main1').hide();
-		$('#page2').show();
-		document.getElementById("footer").style.backgroundColor="rgba(144,144,144,0.6)";
+		$("#loading").fadeIn(100);
+		$("#loading").animate({width:'+=200px' },3000,function(){
+		$("#loading").fadeOut(50);
+		$("#page2").slideDown(3000);
+		//$('#page2').show();
+		//document.getElementById("footer").style.backgroundColor="rgba(144,144,144,0.6)";
+	});
 	});
 
-
+	/*点一次赞*/
 	$('#ipoint').click(function ()
 		{
 			if(!!isClicked){
@@ -175,10 +196,13 @@
 			}else{
 				//isClicked = false;
 				isClicked = true;
-				$('#opoint').html(10 * alreadyHuggedNum);
+				$('#opoint').html(alreadyHuggedNum+1);
+				$("#thank").fadeIn(100);
+				$('#thank').animate({bottom:'50px'},500);
+				$("#thank").fadeOut(500);
 			}
-		}
-		);
+		});
+
 	</script>
 </body>
 </html>

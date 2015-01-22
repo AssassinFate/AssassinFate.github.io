@@ -30,11 +30,15 @@ a{
 	font-family: "Microsoft YaHei";
 	color:#959595;
 	font-size: 150%;
-	line-height: 500%;
+	line-height: 700%;
 }
 #number{
 	color:#FF9700;
 	font-size: 200%;
+	font-family: "Arial";
+}
+#numberfloat{
+	font-size: 75%;
 }
 .main1{
 	width:100%;
@@ -54,6 +58,24 @@ a{
 	font-size: 200%;
 	line-height: 200%;
 }
+#loading{
+	background:#98bf21;
+	height:10px;
+	width:10px;
+	position:absolute;
+	float:left;
+	margin-left: 35%;
+	display: none;
+	box-shadow:  0px 1px rgba(197, 223, 248,0.8),
+				 0px 2px rgba(197, 223, 248,0.8),
+				 0px 3px rgba(197, 223, 248,0.8),
+				 0px 4px rgba(197, 223, 248,0.8),
+				 0px 5px rgba(197, 223, 248,0.8),
+				 0px 6px rgba(197, 223, 248,0.8);
+}
+#loadtext{
+	float:left;
+}
 #page1{
 	width:100%;
 	height:100%;
@@ -65,7 +87,7 @@ a{
 	position: absolute;
 	left: 0px;
 	top:0px;
-	height:89%;
+	height:100%;
 	margin: 0 auto;
 	z-index: 9;
 	background-color: rgb(144,144,144);
@@ -73,7 +95,7 @@ a{
 }
 #main2{
 	width:100%;
-	height:47%;
+	height:46%;
 	margin-top:61%;
 }
 .describe{
@@ -141,7 +163,7 @@ img{
 }
 #opoint{
 	border-style: none;
-	font-family: "Microsoft YaHei";
+	font-family: "Arial";
 	color:#FF9700;
 	height:45%;
 	padding:0px;
@@ -150,12 +172,35 @@ img{
 	font-size: 120%;
 	text-align: center;
 }
+#thank{
+	height:100%;
+	position:relative;
+	padding-left: 0px;
+	width:50px;
+	color:#FF2525;
+	font-size: 400%;
+	font-family: "Snap ITC";
+	padding-top: 40%;
+	display:none;
+	text-shadow: 1px 1px rgba(197, 223, 248,0.8),
+				 2px 2px rgba(197, 223, 248,0.8),
+				 3px 3px rgba(197, 223, 248,0.8),
+				 4px 4px rgba(197, 223, 248,0.8),
+				 5px 5px rgba(197, 223, 248,0.8),
+				 6px 6px rgba(197, 223, 248,0.8);
+}
 #footer{
 	width:100%;
 	height:11%;
 	text-align: center;
 	font-family: "Microsoft YaHei";
 	background-color: #F0F0F0;
+}
+#footer2{
+	width:100%;
+	height:11%;
+	text-align: center;
+	font-family: "Microsoft YaHei";
 }
 #img5{
 	height: 80%;
