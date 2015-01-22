@@ -79,7 +79,7 @@ a{
 .describe{
 	padding-top: 5%;
 	padding-bottom: 10%;
-	height:53%;
+	height:40%;
 	background-color: #FFFFFF;
 }
 .text{
@@ -90,9 +90,6 @@ a{
 	font-size: 200%;
 	color: #959595;
 	padding-left: 15%;
-}
-.text2 .text4{
-	color:#FF9700;
 }
 .img{
 	height:100%;
@@ -113,7 +110,10 @@ img{
 	background-color: #FF9700;
 	text-align: center;
 	overflow:visible;
-	padding:5px;
+	padding-top:5px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
 	border-radius:5px;
 	font-size: 200%;
 }
@@ -124,9 +124,7 @@ img{
 	margin-right: 5%;
 	color:#CF8A3D;
 	background-color: #FFFFFF; 
-	border-style: none;
 	border-width: 0px;
-	border:#F0F0F0;
 	border-radius:5px;
 }
 
