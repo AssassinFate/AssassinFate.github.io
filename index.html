@@ -51,7 +51,7 @@
 	<div class="main1" >
 		<img id="img2" src="photo\anniu1.png">
 		<br><div id="identify">鉴定一下</div></br>
-		<div id="loading"></div>
+		<!--<div id="loading"></div>-->
 	</div>
 	
 	
@@ -184,14 +184,14 @@
 
 	$("#img2").click(function(){
 		//$('.main1').hide();
-		$("#loading").fadeIn(100);
-		$("#loading").animate({width:'+=300px' },3000,function(){
-		$("#loading").fadeOut(50);
+		//$("#loading").fadeIn(100);
+		//$("#loading").animate({width:'+=300px' },3000,function(){
+		//$("#loading").fadeOut(50);
 		$("#page2").slideDown(3000);
 		//$('#page2').show();
 		//document.getElementById("footer").style.backgroundColor="rgba(144,144,144,0.6)";
 	});
-	});
+	//});
 
 	/*点一次赞*/
 	$('#ipoint').click(function ()
