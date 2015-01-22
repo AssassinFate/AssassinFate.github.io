@@ -73,8 +73,10 @@ a{
 				 0px 5px rgba(197, 223, 248,0.8),
 				 0px 6px rgba(197, 223, 248,0.8);
 }
-#loadtext{
-	float:left;
+#page0{
+	width:100%;
+	height:100%;
+	position: relative;
 }
 #page1{
 	width:100%;
@@ -95,7 +97,7 @@ a{
 }
 #main2{
 	width:100%;
-	height:46%;
+	height:46.2%;
 	margin-top:61%;
 }
 .describe{
@@ -188,6 +190,11 @@ img{
 				 4px 4px rgba(197, 223, 248,0.8),
 				 5px 5px rgba(197, 223, 248,0.8),
 				 6px 6px rgba(197, 223, 248,0.8);
+}
+#zan{
+	position: relative;
+	width:100px;
+	height:100px;
 }
 #footer{
 	width:100%;
