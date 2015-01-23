@@ -53,7 +53,12 @@
 	<div class="main1" >
 		<img id="img2" src="photo\anniu1.png">
 		<br><div id="identify">鉴定一下</div></br>
-		<!--<div id="loading"></div>-->
+		<!---->
+	</div>
+
+	<div id="load">
+		<div id="loading"></div>
+		<div id="loadtext">Loading......</div>
 	</div>
 
 	<div class="footer" id="footer">
@@ -64,14 +69,16 @@
 	
 	
 	<div id="page2">
-	<div id="page2header"></div>
+	<div id="page2header">
+		<div id="back">BACK</div>
+	</div>
 	<div id="main2">
 			<div class="describe">
 				<div class="text">
 					<br>
 					<span id="text1">打败全国</span>
 					<span id="text2" style="color:#FF9700;	font-family: 'Arial';">1</span>
-					<span id="text3">%的对手!</span><br><br>被鉴定为
+					<span id="text3">的对手!</span><br><br>被鉴定为
 					<span id="text4" style="color:#FF9700;">“富可敌国”</span>!
 				</div>
 				<div class="img">
@@ -182,16 +189,26 @@
 	var isClicked = false;
 	var alreadyHuggedNum = 168;
 
+	$("#page2header").click(function(){
+		$("#page2").slideUp(2000);
+		$("#back").hide(2000);
+	});
+
 	$("#img2").click(function(){
-		//$('.main1').hide();
-		//$("#loading").fadeIn(100);
-		//$("#loading").animate({width:'+=300px' },3000,function(){
-		//$("#loading").fadeOut(50);
-		$("#page2").slideDown(3000);
+		$('.main1').hide();
+		$('#load').show();
+		$("#loading").fadeIn(100);
+		$("#loading").animate({width:'+=200px' },3000,function(){
+		$("#loading").fadeOut(50);
+		$('#load').hide();
+		$('.main1').show();
+		$("#page2").slideDown(2000);
+		$("#back").show(2000);
+		$("#loading").animate({width:'-=200px' });
 		//$('#page2').show();
 		//document.getElementById("footer").style.backgroundColor="rgba(144,144,144,0.6)";
 	});
-	//});
+	});
 
 	/*点一次赞*/
 	$('#ipoint').click(function ()
