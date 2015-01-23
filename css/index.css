@@ -30,7 +30,7 @@ a{
 	font-family: "Microsoft YaHei";
 	color:#959595;
 	font-size: 70%;
-	line-height: 100%;
+	line-height: 200%;
 }
 #number{
 	color:#FF9700;
@@ -55,7 +55,7 @@ a{
 #identify{
 	font-family: "Microsoft YaHei";
 	color:#FF9700;
-	font-size: 200%;
+	font-size: 100%;
 	line-height: 200%;
 }
 #loading{
@@ -160,7 +160,7 @@ img{
 	color:#959595;
 	font-family: "Microsoft YaHei";
 	font-size: 70%;
-	line-height: 100%;
+	line-height: 300%;
 	background-color: #FFFFFF;
 	float:left;
 	width:100%;
@@ -187,7 +187,7 @@ img{
 	padding-left: 0px;
 	width:50px;
 	color:#FF2525;
-	font-size: 400%;
+	font-size: 200%;
 	font-family: "Snap ITC";
 	padding-top: 40%;
 	display:none;
@@ -226,7 +226,7 @@ img{
 	color:#FFFFFF;
 	text-align: center;
 	font-size: 150%;
-	line-height: 200%;
+	line-height: 150%;
 }
 
 
