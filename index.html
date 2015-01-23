@@ -196,10 +196,8 @@
 		//$("#page2").slideToggle(2000);
 		$("#back").hide(2000);
 		$("#page2").animate({left:'-200%'},1000);
-		$("#main2").animate({left:'300%'},1000,function(){
-			$('#main1_div').show();
-			location.reload();
-		});
+		$("#main2").animate({left:'300%'},1000);
+		$('#main1_div').show();
 	});
 
 	$("#img2").click(function(){
