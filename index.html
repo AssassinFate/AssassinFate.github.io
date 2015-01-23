@@ -51,15 +51,18 @@
 	<div class="show">我的公积金余额是：<h id="number"><span id="numberint"></span>.<span id="numberfloat"></span></h> 元</div>
 
 	<div class="main1" >
+		<div id="main1_div">
 		<img id="img2" src="photo\anniu1.png">
 		<br><div id="identify">鉴定一下</div></br>
-		<!---->
-	</div>
+		</div>
 
-	<div id="load">
+		<div id="load">
 		<div id="loading"></div>
 		<div id="loadtext">Loading......</div>
+		</div>
 	</div>
+
+	
 
 	<div class="footer" id="footer">
 	<div id="img5" style="background-image: url(photo/anniu2.png);background-size: 100% 100%;">
@@ -190,19 +193,24 @@
 	var alreadyHuggedNum = 168;
 
 	$("#page2header").click(function(){
-		$("#page2").slideToggle(2000);
+		//$("#page2").slideToggle(2000);
 		$("#back").hide(2000);
+		$("#page2").animate({left:'-200%'},1200);
+		$("#main2").animate({left:'300%'},1000);
+		$('#main1_div').show();
 	});
 
 	$("#img2").click(function(){
-		$('.main1').hide();
+		$('#main1_div').hide();
 		$('#load').show();
 		$("#loading").fadeIn(100);
 		$("#loading").animate({width:'30%' },3000,function(){
 		$("#loading").fadeOut(50);
 		$('#load').hide();
-		$('.main1').show();
-		$("#page2").slideToggle(2000);
+
+		$("#page2").animate({left:'0px'},1000);
+		$("#main2").animate({left:'0px'},1000);
+		//$("#page2").slideToggle(2000);
 		$("#back").show(2000);
 		$("#loading").animate({width:'1%' });
 		//$('#page2').show();
