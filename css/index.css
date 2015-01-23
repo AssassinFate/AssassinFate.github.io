@@ -29,8 +29,8 @@ a{
 	text-align: center;
 	font-family: "Microsoft YaHei";
 	color:#959595;
-	font-size: 150%;
-	line-height: 700%;
+	font-size: 70%;
+	line-height: 100%;
 }
 #number{
 	color:#FF9700;
@@ -113,7 +113,7 @@ a{
 	width:55%;
 	float:left;
 	line-height: 100%;
-	font-size: 200%;
+	font-size: 70%;
 	color: #959595;
 	padding-left: 10%;
 }
@@ -141,7 +141,7 @@ img{
 	padding-left: 15px;
 	padding-right: 15px;
 	border-radius:5px;
-	font-size: 200%;
+	font-size: 70%;
 }
 #ipoint{
 	height: 60%;
@@ -159,8 +159,8 @@ img{
 	height:21%;
 	color:#959595;
 	font-family: "Microsoft YaHei";
-	font-size: 200%;
-	line-height: 250%;
+	font-size: 70%;
+	line-height: 100%;
 	background-color: #FFFFFF;
 	float:left;
 	width:100%;
@@ -168,7 +168,7 @@ img{
 #sum0{
 	width:auto;
 	height:100%;
-	line-height: 250%;
+	line-height: 100%;
 }
 #opoint{
 	border-style: none;
@@ -178,7 +178,7 @@ img{
 	padding:0px;
 	margin: 0px;
 	border-width:0px;
-	font-size: 120%;
+	font-size: 100%;
 	text-align: center;
 }
 #thank{
@@ -225,7 +225,7 @@ img{
 .footer a{
 	color:#FFFFFF;
 	text-align: center;
-	font-size: 300%;
+	font-size: 150%;
 	line-height: 200%;
 }
 
