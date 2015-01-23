@@ -10,11 +10,12 @@
 #body{
 	margin:0px; 
 	background-color: #F0F0F0;
+	height: 1000px;
 }
 } 
 .header{
 	width: 100%;
-	height:29%;
+	height:290px;
 	line-height: 500%;
 }
 #img1{
@@ -43,7 +44,7 @@ a{
 }
 .main1{
 	width:100%;
-	height:47%;
+	height:470px;
 	text-align: center;
 	font-family: "Microsoft YaHei";
 	overflow: hidden;
@@ -115,7 +116,7 @@ a{
 }
 #page2header{
 	text-align: center;
-	height:43%;
+	height:430px;
 	font-family: "Elephant";
 }
 #back{
@@ -126,7 +127,7 @@ a{
 }
 #main2{
 	width:100%;
-	height:46%;
+	height:460px;
 }
 .describe{
 	padding-top: 6%;
@@ -230,14 +231,14 @@ img{
 }
 #footer{
 	width:100%;
-	height:11%;
+	height:110px;
 	text-align: center;
 	font-family: "Microsoft YaHei";
 	background-color: #F0F0F0;
 }
 #footer2{
 	width:100%;
-	height:11%;
+	height:110px;
 	text-align: center;
 	font-family: "Microsoft YaHei";
 }

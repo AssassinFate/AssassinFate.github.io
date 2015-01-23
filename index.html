@@ -190,7 +190,7 @@
 	var alreadyHuggedNum = 168;
 
 	$("#page2header").click(function(){
-		$("#page2").slideUp(2000);
+		$("#page2").slideToggle(2000);
 		$("#back").hide(2000);
 	});
 
@@ -202,7 +202,7 @@
 		$("#loading").fadeOut(50);
 		$('#load').hide();
 		$('.main1').show();
-		$("#page2").slideDown(2000);
+		$("#page2").slideToggle(2000);
 		$("#back").show(2000);
 		$("#loading").animate({width:'1%' });
 		//$('#page2').show();
