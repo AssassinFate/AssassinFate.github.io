@@ -30,7 +30,7 @@ a{
 	font-family: "Microsoft YaHei";
 	color:#959595;
 	font-size: 70%;
-	line-height: 200%;
+	line-height: 400%;
 }
 #number{
 	color:#FF9700;
@@ -160,7 +160,6 @@ img{
 	color:#959595;
 	font-family: "Microsoft YaHei";
 	font-size: 70%;
-	line-height: 300%;
 	background-color: #FFFFFF;
 	float:left;
 	width:100%;
@@ -168,7 +167,7 @@ img{
 #sum0{
 	width:auto;
 	height:100%;
-	line-height: 100%;
+	line-height: 300%;
 }
 #opoint{
 	border-style: none;
