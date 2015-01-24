@@ -98,55 +98,59 @@ a{
 	padding-top: 6%;
 	width:100%;
 }
-#loadmoney{
-	width: 100%;
-	height: auto;
-	padding-left: 17%;
-}
 .money{
-	width:5%;
-	float: left;
-	margin-left: 3%;
+	padding-top: 10%;
+	width:30%;
+	height: auto;
+	margin: 0 auto;
 }
 #money1{
 	width: 100%;
 	height: auto;
 	display: none;
+	z-index: 1;
 }
 #money2{
 	width: 100%;
 	height: auto;
 	display: none;
+	z-index: 2;
 }
 #money3{
 	width: 100%;
 	height: auto;
 	display: none;
+	z-index: 3;
 }
 #money4{
 	width: 100%;
 	height: auto;
 	display: none;
+	z-index: 4;
 }
 #money5{
 	width: 100%;
 	height: auto;
 	display: none;
+	z-index: 5;
 }
 #money6{
 	width: 100%;
 	height: auto;
 	display: none;
+	z-index: 6;
 }
 #money7{
 	width: 100%;
 	height: auto;
 	display: none;
+	z-index: 7;
 }
 #money8{
 	width: 100%;;
 	height: auto;
 	display: none;
+	z-index: 8;
 }
 #yuanbao{
 	width: 25%;
@@ -297,11 +301,11 @@ img{
 	padding-top: 5%;
 	font-family: "Microsoft YaHei";
 	font-size: 200%;
-	color: #FF9700;
+	color: #FFFFFF;
 }
 #zanimg{
-	padding-top: 20%;
-	width:60%;
+	padding-top: 40%;
+	width:33%;
 	height: auto;
 	margin: 0 auto;
 }
@@ -330,7 +334,7 @@ img{
 	color:#FFFFFF;
 	text-align: center;
 	font-size: 120%;
-	line-height: 200%;
+	line-height: 250%;
 }
 
 

@@ -58,16 +58,15 @@
 
 		<div id="load">
 
-			<div id="yuanbaodiv"><img id="yuanbao" src="photo\yuanbao.png"></img></div>
-			<div id="loadmoney">
-			<div class="money"><img id="money1" src="photo\money1.png"></img></div>
-			<div class="money"><img id="money2" src="photo\money1.png"></img></div>
-			<div class="money"><img id="money3" src="photo\money1.png"></img></div>
-			<div class="money"><img id="money4" src="photo\money1.png"></img></div>
-			<div class="money"><img id="money5" src="photo\money1.png"></img></div>
-			<div class="money"><img id="money6" src="photo\money1.png"></img></div>
-			<div class="money"><img id="money7" src="photo\money1.png"></img></div>
-			<div class="money"><img id="money8" src="photo\money1.png"></img></div>
+			<div class="money">
+			<img id="money1" src="photo\amplify\1.png"></img>
+			<img id="money2" src="photo\amplify\2.png"></img>
+			<img id="money3" src="photo\amplify\3.png"></img>
+			<img id="money4" src="photo\amplify\4.png"></img>
+			<img id="money5" src="photo\amplify\5.png"></img>
+			<img id="money6" src="photo\amplify\6.png"></img>
+			<img id="money7" src="photo\amplify\7.png"></img>
+			<img id="money8" src="photo\amplify\8.png"></img>
 			</div>
 
 		<!--<div id="loading"></div>
@@ -224,6 +223,66 @@
 	$("#img2").click(function(){
 		$('#main1_div').hide();
 		$('#load').fadeIn(500,function(){
+			$('#money1').fadeIn(100,function(){
+				$('#money1').fadeOut(0);
+				$('#money2').fadeIn(100,function(){
+					$('#money2').fadeOut(0);
+					$('#money3').fadeIn(100,function(){
+						$('#money3').fadeOut(0);
+						$('#money4').fadeIn(100,function(){
+							$('#money4').fadeOut(0);
+							$('#money5').fadeIn(100,function(){
+								$('#money5').fadeOut(0);
+								$('#money6').fadeIn(100,function(){
+									$('#money6').fadeOut(0);
+									$('#money7').fadeIn(100,function(){
+										$('#money7').fadeOut(0);
+										$('#money8').fadeIn(100,function(){
+											$('#money8').fadeOut(0);
+											$('#money1').fadeIn(100,function(){
+												$('#money1').fadeOut(0);
+												$('#money2').fadeIn(100,function(){
+													$('#money2').fadeOut(0);
+													$('#money3').fadeIn(100,function(){
+														$('#money3').fadeOut(0);
+														$('#money4').fadeIn(100,function(){
+															$('#money4').fadeOut(0);
+															$('#money5').fadeIn(100,function(){
+																$('#money5').fadeOut(0);
+																$('#money6').fadeIn(100,function(){
+																	$('#money6').fadeOut(0);
+																	$('#money7').fadeIn(100,function(){
+																		$('#money7').fadeOut(0);
+																			$('#money8').fadeIn(100,function(){
+																				$('#money8').fadeOut(0);
+																				$('#load').hide();
+																				$("#page2").animate({left:'0px'},1000);
+																				$("#main2").animate({left:'0px'},1000);
+																				$("#back").show(2000);
+																		});
+																	});
+																});
+															});
+														});
+													});
+												});
+											});
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+		});	
+	});
+
+
+
+	/*$("#img2").click(function(){
+		$('#main1_div').hide();
+		$('#load').fadeIn(500,function(){
 			$('#money1').fadeIn(function(){
 				$('#money2').fadeIn(function(){
 					$('#money3').fadeIn(function(){
@@ -245,19 +304,22 @@
 					});
 				});
 			});
+		});	
+	});
+*/
 			//$('#money1').fadeOut(2000,function(){
 			//	$('#money2').fadeIn(2000,function(){				
 				
 
 				//});
-		});			
+				
 		//$('#money1').animate({width:"0%"},1000,function(){
 		//	$('#money2').animate({width:"100%"},1000,function(){
 		//		$('money2').animate({width:"0%"},1000,function(){
 		//		$('#money1').animate({width:"100%"},1000)
 		//		});
 		//	});
-	});
+	
 		//});
 
 		//$("#loading").fadeIn(100);
