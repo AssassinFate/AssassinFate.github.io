@@ -97,6 +97,11 @@
 		</div>
 	</div>
 
+	<div id="zan">
+		<div><img id="zanimg" src="photo\zan.png"></img></div>
+		<div id="zantext"><b>只能点一次哦~</b></div>
+	</div>
+
 	<div class="footer" id="footer2">
 		<div id="img5" style="background-image: url(photo/anniu2.png);background-size: 100% 100%;">
 		<a href="http://zfgjj.jianbing.com/m/">查查我的公积金</a>
@@ -225,7 +230,10 @@
 	$('#ipoint').click(function ()
 		{
 			if(!!isClicked){
-				alert("只能点一次哦，亲");
+				$("#zan").fadeIn(500);
+				$("#zan").click(function(){
+					$("#zan").fadeOut(300);
+				});
 			}else{
 				//isClicked = false;
 				isClicked = true;
