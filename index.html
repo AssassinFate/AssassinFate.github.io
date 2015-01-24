@@ -230,9 +230,11 @@
 				//isClicked = false;
 				isClicked = true;
 				$('#opoint').html(alreadyHuggedNum+1);
-				$("#thank").fadeIn(100);
-				$('#thank').animate({bottom:'50px'},500);
-				$("#thank").fadeOut(500);
+				//$("#thank").fadeIn(0);
+				$("#thank").fadeTo("fast",0);
+				$('#thank').animate({fontSize:'800%',bottom:'50px',opacity:1},1000);
+				$('#thank').animate({bottom:'60px',opacity:0},300);
+
 			}
 		});
 	</script>
