@@ -130,6 +130,9 @@
 	var gjjnum = Math.random()*10000000;
 	var gjjnumint=Math.floor(gjjnum);
 	var gjjnumfloat=gjjnum-gjjnumint;
+	var wocao = 0;
+	var animateCurSumTime = 0;
+	var handlerId;
 	document.getElementById("numberint").innerHTML=gjjnumint;
 	document.getElementById("numberfloat").innerHTML=(gjjnumfloat.toFixed(2))*100;
 	
@@ -222,6 +225,49 @@
 
 	$("#img2").click(function(){
 		$('#main1_div').hide();
+
+		$('#load').show();
+		$('#money1').show();
+		var frameInterval = 125;//~ 30 frames per second
+		
+		handlerId = setInterval(function(){
+			var totalTime = 2 * 1000;	
+			if(animateCurSumTime - totalTime >= 0){
+				clearInterval(handlerId);
+				$('#load').hide();
+				$("#page2").animate({left:'0px'},1000);
+				$("#main2").animate({left:'0px'},1000);
+				$("#back").show(2000);
+				return;
+			}
+			animateCurSumTime += 125;//~ 30 frames per second
+			var range = [0, 1, 2, 3, 4, 5, 6, 7];
+			var currentIndex = +wocao;
+			var nextIndex = currentIndex + 1;
+			var tmpStr = '';
+
+			if(nextIndex === range.length){
+				nextIndex = 0;
+				wocao = 0;
+			}else{
+				wocao = +wocao;
+				wocao += 1;
+			}
+
+			tmpStr = '#money' + range[currentIndex];
+			$(tmpStr).hide();
+
+			//show next
+			tmpStr = "#money" + range[nextIndex];
+			$(tmpStr).show();	
+		}, frameInterval);
+//	});
+
+	});
+
+
+		/*
+		$('#main1_div').hide();
 		$('#load').fadeIn(500,function(){
 			$('#money1').fadeIn(100,function(){
 				$('#money1').fadeOut(0);
@@ -276,7 +322,7 @@
 				});
 			});
 		});	
-	});
+	});*/
 
 
 
