@@ -57,8 +57,21 @@
 		</div>
 
 		<div id="load">
-		<div id="loading"></div>
-		<div id="loadtext">Loading......</div>
+
+			<div id="yuanbaodiv"><img id="yuanbao" src="photo\yuanbao.png"></img></div>
+			<div id="loadmoney">
+			<div class="money"><img id="money1" src="photo\money1.png"></img></div>
+			<div class="money"><img id="money2" src="photo\money1.png"></img></div>
+			<div class="money"><img id="money3" src="photo\money1.png"></img></div>
+			<div class="money"><img id="money4" src="photo\money1.png"></img></div>
+			<div class="money"><img id="money5" src="photo\money1.png"></img></div>
+			<div class="money"><img id="money6" src="photo\money1.png"></img></div>
+			<div class="money"><img id="money7" src="photo\money1.png"></img></div>
+			<div class="money"><img id="money8" src="photo\money1.png"></img></div>
+			</div>
+
+		<!--<div id="loading"></div>
+		<div id="loadtext">Loading......</div>-->
 		</div>
 	</div>
 
@@ -210,21 +223,53 @@
 
 	$("#img2").click(function(){
 		$('#main1_div').hide();
-		$('#load').show();
-		$("#loading").fadeIn(100);
-		$("#loading").animate({width:'30%' },3000,function(){
-		$("#loading").fadeOut(50);
-		$('#load').hide();
+		$('#load').fadeIn(500,function(){
+			$('#money1').fadeIn(function(){
+				$('#money2').fadeIn(function(){
+					$('#money3').fadeIn(function(){
+						$('#money4').fadeIn(function(){
+							$('#money5').fadeIn(function(){
+								$('#money6').fadeIn(function(){
+									$('#money7').fadeIn(function(){
+										$('#money8').fadeIn(function(){
+											$('#load').hide();
+											$("#page2").animate({left:'0px'},1000);
+											$("#main2").animate({left:'0px'},1000);
+											$("#back").show(2000);
+											//$("#loading").animate({width:'1%' });
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
+			//$('#money1').fadeOut(2000,function(){
+			//	$('#money2').fadeIn(2000,function(){				
+				
 
-		$("#page2").animate({left:'0px'},1000);
-		$("#main2").animate({left:'0px'},1000);
-		//$("#page2").slideToggle(2000);
-		$("#back").show(2000);
-		$("#loading").animate({width:'1%' });
+				//});
+		});			
+		//$('#money1').animate({width:"0%"},1000,function(){
+		//	$('#money2').animate({width:"100%"},1000,function(){
+		//		$('money2').animate({width:"0%"},1000,function(){
+		//		$('#money1').animate({width:"100%"},1000)
+		//		});
+		//	});
+	});
+		//});
+
+		//$("#loading").fadeIn(100);
+		//$("#loading").animate({width:'30%' },3000,function(){
+		//$("#loading").fadeOut(50);
+		
+
+		
 		//$('#page2').show();
 		//document.getElementById("footer").style.backgroundColor="rgba(144,144,144,0.6)";
-	});
-	});
+	//});
+	//});
 
 	/*点一次赞*/
 	$('#ipoint').click(function ()

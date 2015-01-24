@@ -67,10 +67,8 @@ a{
 	line-height: 200%;
 }
 #load{
-	width:30%;
+	width:100%;
 	height:100%;
-	overflow: hidden;
-	margin: 0 auto;
 	display: none;
 }
 #loading{
@@ -95,6 +93,64 @@ a{
 	padding-left: 15%;
 	font-size: 100%;
 	color:#959595;
+}
+#yuanbaodiv{
+	padding-top: 6%;
+	width:100%;
+}
+#loadmoney{
+	width: 100%;
+	height: auto;
+	padding-left: 17%;
+}
+.money{
+	width:5%;
+	float: left;
+	margin-left: 3%;
+}
+#money1{
+	width: 100%;
+	height: auto;
+	display: none;
+}
+#money2{
+	width: 100%;
+	height: auto;
+	display: none;
+}
+#money3{
+	width: 100%;
+	height: auto;
+	display: none;
+}
+#money4{
+	width: 100%;
+	height: auto;
+	display: none;
+}
+#money5{
+	width: 100%;
+	height: auto;
+	display: none;
+}
+#money6{
+	width: 100%;
+	height: auto;
+	display: none;
+}
+#money7{
+	width: 100%;
+	height: auto;
+	display: none;
+}
+#money8{
+	width: 100%;;
+	height: auto;
+	display: none;
+}
+#yuanbao{
+	width: 25%;
+	height: auto;
 }
 #page0{
 	width:100%;
