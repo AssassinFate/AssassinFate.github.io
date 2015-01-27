@@ -1,0 +1,550 @@
+.top {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 9;
+    background: #ececec
+}
+
+.top.whiteBg {
+    background: #ececec;
+    transition: background .5s;
+    -moz-transition: background .5s;
+    -webkit-transition: background .5s;
+    -o-transition: background .5s
+}
+
+.top .logo {
+    display: none;
+    font-size: 0
+}
+
+.top .dlLink {
+    display: none;
+    width: 70px;
+    height: 60px
+}
+
+.top .dlLink a {
+    display: block;
+    padding: 25px 0 0 30px;
+    color: #ef7521
+}
+
+.top .dlBox {
+    display: none;
+    position: absolute;
+    width: 199px;
+    height: 180px;
+    top: 50px;
+    left: 132px;
+    text-align: center
+}
+
+.top .dlBox .arrow {
+    width: 0;
+    height: 0;
+    margin-left: 90px;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: transparent transparent #fff;
+    overflow: hidden
+}
+
+.top .dlBox .whiteBg {
+    height: 170px;
+    background: #fff
+}
+
+.top .dlBox .qrCode {
+    font-size: 0
+}
+
+.product .dl, .top .dlBox .dl {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    color: #999;
+    font-size: 13px
+}
+
+.product .dl a, .top .dlBox .dl a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 0
+}
+
+.product .dl a.ios, .top .dlBox .dl a.ios {
+    background: url(../images/download_ios.png) center top no-repeat
+}
+
+.product .dl a.ios:hover, .top .dlBox .dl a.ios:hover {
+    background: url(../images/download_ios-active.png) center top no-repeat
+}
+
+.product .dl a.android, .top .dlBox .dl a.android {
+    background: url(../images/download_android.png) center top no-repeat
+}
+
+.product .dl a.android:hover, .top .dlBox .dl a.android:hover {
+    background: url(../images/download_android-active.png) center top no-repeat
+}
+
+.top .nav ul li {
+    display: inline;
+    float: left;
+    height: 60px;
+    margin-left: 20px;
+    cursor: pointer
+}
+
+.top .nav ul li a {
+    display: block;
+    margin: 14px 5px;
+    line-height: 31px;
+    color: #4d4d4d;
+    border-bottom: #ef7521 0 solid
+}
+
+.top .nav ul li a.active {
+    color: #ef7521;
+    border-bottom: #ef7521 1px solid;
+    margin-top: 2px
+}
+
+.header {
+    color: #ececec;
+    font-size: 48px;
+    line-height: 100%;
+    font-family: \9ED1\4F53;
+    text-align: center;
+    height: 250px;
+    background: #333
+}
+
+.header .logo {
+    position: relative;
+    width: 620px;
+    margin: 0 auto
+}
+
+.header .logo img {
+    margin-top: 120px
+}
+
+.product {
+    height: 620px;
+    background: #333
+}
+
+.product .item {
+    text-align: center
+}
+
+.product .qrCode {
+    height: 260px;
+    font-size: 0
+}
+
+.product .qrCode img {
+    margin: 115px auto 10px
+}
+
+.product .featureList {
+    height: 270px
+}
+
+.product .featureList ul {
+    width: 900px;
+    height: 270px;
+    margin: 0 auto
+}
+
+.product .featureList ul li {
+    float: left;
+    width: 300px;
+    padding: 50px 0 0;
+    text-align: center
+}
+
+.product .more {
+    height: 60px
+}
+
+.product .more img {
+    margin-top: 17px
+}
+
+.features {
+    height: 660px;
+    background: #ececec
+}
+
+.features .slider {
+    position: relative;
+    height: 660px
+}
+
+.features .slider .img {
+    width: 310px;
+    height: 560px;
+    margin: 100px 0 0
+}
+
+.features .slider .img ul {
+    position: relative;
+    width: 254px;
+    height: 450px;
+    margin: 102px auto 0;
+    overflow: hidden
+}
+
+.features .slider .img ul li {
+    position: absolute;
+    width: 254px;
+    left: 0;
+    top: 0
+}
+
+.features .slider .img ul li img {
+    width: 100%
+}
+
+.features .slider .text {
+    position: relative;
+    width: 510px;
+    height: 600px;
+    margin: 210px 0 0 80px;
+    overflow: hidden
+}
+
+.features .slider .text ul li {
+    position: absolute;
+    width: 510px;
+    height: 300px;
+    left: 0;
+    top: 0;
+    background: #ececec
+}
+
+.features .slider .mask {
+    position: absolute;
+    width: 310px;
+    height: 100%;
+    left: 0;
+    background: url(../images/phoneframe.png) bottom no-repeat;
+    z-index: 8
+}
+
+.features .slider .nav {
+    position: absolute;
+    bottom: 50px;
+    left: 44%;
+    cursor: pointer
+}
+
+.features .slider .nav ul li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    background: url(../images/p.png) left center no-repeat
+}
+
+.features .slider .nav ul li.active {
+    background: url(../images/p.png) right center no-repeat
+}
+
+.about {
+    height: 530px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #666;
+    padding: 0 45px
+}
+
+.about h5 {
+    height: 160px;
+    background: url(../images/us.png) center top no-repeat
+}
+
+.about ul {
+    margin-top: 50px
+}
+
+.about ul .pre {
+    color: #ee7421
+}
+
+.footer {
+    height: 72px;
+    line-height: 36px;
+    padding: 0 45px;
+    color: #999;
+    text-align: right
+}
+
+.footer a {
+    float: left;
+    color: #999
+}
+
+.jobs {
+    color: #ccc;
+    line-height: 24px;
+    padding-top: 140px
+}
+
+.jobs .email {
+    font-size: 16px;
+    padding-left: 30px
+}
+
+.jobs .list ul {
+    height: auto;
+    overflow: hidden;
+    padding: 50px 10px 0;
+    font-size: 0
+}
+
+.jobs .list ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    padding: 0 20px 50px
+}
+
+.jobs .list ul li h3 {
+    font-size: 20px;
+    color: #ffb718
+}
+
+.jobs .list ul li h5 {
+    margin-top: 30px;
+    font-size: 16px
+}
+
+.jobs .list ul li p {
+    font-size: 12px
+}
+
+.jobs .list ul li p:before {
+    content: '·';
+    padding: 0 5px 0 0;
+    font-size: 20px;
+    vertical-align: bottom
+}
+
+.pageJoin {
+    height: 100%;
+    background: #333
+}
+
+.pageSuppliers .dlLink {
+    display: block
+}
+
+.pageSuppliers .banner {
+    height: 700px;
+    margin-bottom: 100px;
+    text-align: center
+}
+
+.pageSuppliers .banner .banner-top {
+    height: 500px;
+    background: #ffb718
+}
+
+.pageSuppliers .banner .banner-bottom {
+    height: 180px;
+    padding-top: 20px;
+    background: #333
+}
+
+.pageSuppliers .main {
+    margin: 0 50px
+}
+
+.pageSuppliers .main .item {
+    margin-bottom: 100px
+}
+
+.pageSuppliers .main h1 {
+    height: 46px;
+    padding: 40px 0 30px 30px;
+    color: #4d4d4d;
+    font-size: 30px;
+    line-height: 100%;
+    font-family: \9ED1\4F53;
+    background: url(../images/titlecircle.png) left top no-repeat
+}
+
+.pageSuppliers .main .verticalList li {
+    margin: 0 45px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: gray
+}
+
+.pageSuppliers .main .verticalList li span {
+    vertical-align: top;
+    font-size: 12px;
+    color: #ff7922;
+    padding-right: 5px
+}
+
+.pageSuppliers .main .verticalList li span.key {
+    float: left;
+    width: 80px;
+    color: gray;
+    font-size: 16px
+}
+
+.pageSuppliers .main .verticalList li i {
+    color: #4d4d4d;
+    font-style: normal
+}
+
+.pageSuppliers .main h2 {
+    line-height: 100%;
+    color: #ff7e2e;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px
+}
+
+.pageSuppliers .main h3 {
+    line-height: 100%;
+    color: gray;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 40px
+}
+
+.pageSuppliers .main .item img {
+    margin-left: 30px
+}
+
+.contact-us {
+    height: auto;
+    overflow: hidden
+}
+
+.contact-us .left, .contact-us .right {
+    position: relative;
+    float: left;
+    width: 340px;
+    margin: 0 30px
+}
+
+.contact-us .left:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 230px;
+    top: 0;
+    right: 0;
+    background: #f2f2f2
+}
+
+.contact-us li {
+    margin: 0 0 10px !important
+}
+
+.contact-us form .row {
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+.contact-us form .ipt {
+    width: 336px;
+    height: 38px;
+    text-indent: 10px;
+    border: 2px solid #efefef;
+    background: #fbfbfb;
+    color: #4d4d4d
+}
+
+.contact-us form .ipt.active {
+    border-color: #ff7e2e
+}
+
+.select-city {
+    height: auto;
+    text-align: right;
+    overflow: hidden
+}
+
+.box-select {
+    display: block;
+    position: relative;
+    width: 161px;
+    height: 40px;
+    border: 2px solid #efefef;
+    background: #fbfbfb;
+    color: #4d4d4d;
+    overflow: hidden
+}
+
+.box-select label {
+    padding: 0 5px
+}
+
+.box-select label:after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 2px;
+    right: 2px;
+    background: url(../images/btn-down.png) center no-repeat #fbfbfb
+}
+
+.box-select select {
+    width: 175px;
+    margin-top: 10px;
+    border: none;
+    background: 0 0
+}
+
+.btn-submit {
+    display: block;
+    width: 180px;
+    height: 40px;
+    margin: 30px auto 0;
+    background: #ffb71a;
+    color: #4d4d4d;
+    border: none
+}
+
+.btn-submit:active {
+    background: #b3b3b3
+}
+
+.btn-submit.disabled {
+    background: #ccc;
+    color: #B3B3B3
+}
+
+.pageSuppliers .bg-footer {
+    background: #ececec
+}
+
+.pageSuppliers .btn-contact {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 120px;
+    height: 40px;
+    margin-top: -20px;
+    line-height: 40px;
+    color: #fff;
+    background: #fd7e2d;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1
+}
