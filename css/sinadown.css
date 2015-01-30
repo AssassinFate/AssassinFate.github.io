@@ -1,0 +1,14 @@
+@media all and (orientation : landscape) { /*　　这是匹配横屏的状态，横屏时的css代码　　*/
+#body{
+	background-color: #F0F0F0;
+	width:700px;
+	height:1000px;
+	margin:0px auto;
+}
+} 
+@media all and (orientation : portrait){/*　　这是匹配竖屏的状态，竖屏时的css代码　　*/
+#body{
+	margin:0px; 
+	background-color: #F0F0F0;
+}
+

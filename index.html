@@ -1,136 +1,55 @@
 <!DOCTYPE html>
-<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no"/>
     <title>51公积金</title>
-    <meta name="keywords" content="公积金,煎饼网络,51公积金" />
-    <meta name="description" content="51公积金史上最好的公积金app" />
+    <style>
+        body{
+            margin: 0px;
+            width:100%;
+            height:100%;
+        }
+        #download{
+            width: 100%;
+            height:100%;
+        }
+        #btn{
+            position: fixed;
+            top: 60%;
+            width: 100%;
+            text-align: center;
+        }
+        #img1{
+            width: 100%;
+            height:100%;
+        }
+        #img2{
+            width: 60%;
+        }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/e8dd2ab4.normalize.css">
-    <link rel="stylesheet" href="./css/752e6d80.main.css">
+    </style>
 </head>
-<body youdao="bind">
-<div class="page pageIndex">
-    <div id="top" class="top whiteBg">
-        <div class="w900">
-            <div id="nav" class="nav fr">
-                <ul>
-                    <li><a class="active" data-href="header" href="javascript:;">首页</a></li>
-                    <li><a data-href="features" href="javascript:;" class="">产品功能</a></li>
-                    <li><a data-href="about" href="javascript:;" class="">关于我们</a></li>
-                    <li id="joinUs"><a href="javascript:;">加入我们</a></li>
-                    <li id="bbs"><a href="bbs/" class="" target="_blank">交流论坛</a></li>
-                </ul>
-            </div>
-            <div id="logoMenu" class="logo fl" style="display: block;"><a href="index.html"><img src="./res/logo_menu.png" alt="51公积金"></a>
-            </div>
-            <div id="dlMenu" class="dlLink fl" style="display: block;"><a href="javascript:;">下载</a></div>
-            <div id="dlBox" class="dlBox">
-                <div class="arrow"></div>
-                <div class="whiteBg">
-                    <div class="qrCode"><img src="./res/qrcode.png" alt=""></div>
-                    <div class="dl">
-                        电脑直接下载
-                        <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=908573399&mt=8" class="ios"></a>
-                        <a href="http://app.mi.com/detail/70301" class="android"></a>
-                    </div>
-                </div>
-            </div>
+<body>
+    <div id="download">
+        <div>
+            <img id="img1" src="img/SinaDown.jpg"></img>
+        </div>
+        <div id="btn">
+            <a href="http://www.baidu.com"><img id="img2" src="img/SinaBtn1.png" onmouseover="showA(this)" onmouseout="showB(this)"></img></a>
         </div>
     </div>
-    <div id="header" class="header">
-        <div id="logoLarge" class="logo"><img><p>最好用的公积金APP</p><br/><p style="font-size: 32px;">没有之一</p></div>
-    </div>
-    <div class="product">
-        <div class="w900">
-            <div id="qrCode" class="item qrCode"><img src="./res/qrcode.png" alt=""></div>
-            <div class="item dl">
-                电脑直接下载
-                <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=908573399&mt=8" class="ios"></a>
-                <a href="http://app.mi.com/detail/70301" class="android"></a>
-            </div>
-            <div class="item featureList">
-                <ul>
-                    <li><img src="./res/feature_01.png" alt=""></li>
-                    <li><img src="./res/feature_02.png" alt=""></li>
-                    <li><img src="./res/feature_03.png" alt=""></li>
-                </ul>
-            </div>
-            <div class="item more"><img src="./res/more.png" alt=""></div>
-        </div>
-    </div>
-    <div id="features" class="features">
-        <div class="w900">
-            <div id="slider" class="slider">
-                <div class="img fl">
-                    <ul>
-                        <li style="z-index: 3;"><img src="./res/slide_01_img.png" alt=""></li>
-                        <li style="z-index: 2;"><img src="./res/slide_02_img.png" alt=""></li>
-                        <li style="z-index: 1;"><img src="./res/slide_03_img.png" alt=""></li>
-                    </ul>
-                </div>
-                <div class="text fl">
-                    <ul>
-                        <li style="display: list-item;"><img src="./res/slide_01_words.png" alt="小巧便捷，2M大小，查询简单"></li>
-                        <li style="display: none;"><img src="./res/slide_02_words.png" alt="覆盖全国，支持全国三百多地区公积金查询"></li>
-                        <li style="display: none;"><img src="./res/slide_03_words.png" alt="内容丰富，资讯政策实时跟踪"></li>
-                    </ul>
-                </div>
-                <div class="mask"></div>
-                <div class="nav">
-                    <ul>
-                        <li class="active"></li>
-                        <li class=""></li>
-                        <li class=""></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="w900">
-        <div id="about" class="about">
-            <h5></h5>
+</body>
 
-            <div class="content">
-                <p>杭州煎饼网络技术有限公司成立于2014年6月，致力于为广大用户提供更便捷贴心的手机应用。</p>
+<script>
+function showA(obj)
+{
+obj.src="img/SinaBtn2.png";
+}
+function showB(obj)
+{
+obj.src="img/SinaBtn1.png"  
+}
 
-                <p>公司开发运营的51公积金App，提供全国三百多个地区的公积金数据查询。</p>
-                <ul>
-                    <li><span class="pre">问题反馈 : </span>app@jianbing.com</li>
-                    <li><span class="pre">市场合作 : </span>market@jianbing.com</li>
-                    <li><span class="pre">公司地址 : </span>杭州市西湖区西斗门路9号福地创业园3号楼3303室</li>
-                    <li><span class="pre">客服QQ : </span>800053286<!-- WPA Button Begin -->
-                        <script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzgwMDA1MzI4Nl8yMDg4MTlfODAwMDUzMjg2Xw"></script>
-                        <!-- WPA Button End --></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer">
-            <p>
-                <a>友情链接：&nbsp;&nbsp;</a>
-                <a href='http://game.tongbu.com'>苹果手机游戏&nbsp;</a>
-                <a href='http://www.haima.me'>海马助手&nbsp;</a>
-                <a href='http://sj.zol.com.cn'>ZOL应用下载&nbsp;</a>
-                <a href='http://www.anzow.com/ '>安卓软件园&nbsp;</a>
-                <a href='http://www.520apk.com'>安卓乐园&nbsp;</a>
-             </p>
-            <br/>
-            <p>浙ICP备12029872号©2014杭州煎饼网络技术有限公司</p>
-        </div>
-    </div>
-</div>
-
-<script src="./res/jquery.min.js"></script>
-<script src="./res/jquery.animate-colors-min.js"></script>
-<script src="./res/cabf6f03.slider.js"></script>
-<script src="./res/78e68ff2.common.js"></script>
-<script src="./res/685788f2.main.js"></script>
-<script type="text/javascript">
-    $("#bbs").click(function(){
-        $(this).find("a").removeClass("active");
-    });
 </script>
-<div style="display: none;">
-</div>
-
-</body></html>
+</html>
